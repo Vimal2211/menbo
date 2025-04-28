@@ -1,0 +1,71 @@
+<!-- src/app/get-quote/get-quote.component.html -->
+
+<section id="getQuote" class="get-quote-section" data-aos="fade-up">
+    <div class="container">
+      <div class="quote-card">
+        <div class="quote-header">
+          <h2 class="text-center">Get a Quote</h2>
+          <p class="text-center">We offer competitive quotes for all your insurance needs. Please fill out the form below to receive your personalized quote.</p>
+        </div>
+        <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()" class="quote-form">
+          <div class="row">
+            <!-- Name Field -->
+            <div class="col-md-6 mb-4">
+              <label for="quoteName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="quoteName" formControlName="name" placeholder="Your Full Name" required>
+              <div *ngIf="quoteForm.get('name')?.invalid && quoteForm.get('name')?.touched" class="text-danger">
+                Name is required.
+              </div>
+            </div>
+            <!-- Email Field -->
+            <div class="col-md-6 mb-4">
+              <label for="quoteEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="quoteEmail" formControlName="email" placeholder="name@example.com" required>
+              <div *ngIf="quoteForm.get('email')?.invalid && quoteForm.get('email')?.touched" class="text-danger">
+                Please enter a valid email.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Phone Field -->
+            <div class="col-md-6 mb-4">
+              <label for="quotePhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="quotePhone" formControlName="phone" placeholder="+91 9876543210" required>
+              <div *ngIf="quoteForm.get('phone')?.invalid && quoteForm.get('phone')?.touched" class="text-danger">
+                Please enter a valid phone number.
+              </div>
+            </div>
+            <!-- Insurance Type Field -->
+            <div class="col-md-6 mb-4">
+              <label for="insuranceType" class="form-label">Insurance Type</label>
+              <select class="form-select" id="insuranceType" formControlName="insuranceType" required>
+                <option value="" disabled>Select Insurance Type</option>
+                <option value="life">Life Insurance</option>
+                <option value="health">Health Insurance</option>
+                <option value="vehicle">Vehicle Insurance</option>
+                <option value="home">Home Insurance</option>
+                <option value="travel">Travel Insurance</option>
+                <option value="business">Business Insurance</option>
+              </select>
+              <div *ngIf="quoteForm.get('insuranceType')?.invalid && quoteForm.get('insuranceType')?.touched" class="text-danger">
+                Please select an insurance type.
+              </div>
+            </div>
+          </div>
+          <!-- Message Field -->
+          <div class="mb-4">
+            <label for="quoteMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="quoteMessage" formControlName="message" rows="4" placeholder="Additional Information" required></textarea>
+            <div *ngIf="quoteForm.get('message')?.invalid && quoteForm.get('message')?.touched" class="text-danger">
+              Please enter your message.
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-custom w-100" style="cursor: pointer;" [disabled]="quoteForm.invalid">
+            <i class="fas fa-paper-plane"></i> Submit Quote Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  

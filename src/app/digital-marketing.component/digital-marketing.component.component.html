@@ -1,0 +1,101 @@
+<section id="digital-marketing" class="digital-marketing-section">
+    <!-- Header with Background Image and Centered Text -->
+    <div class="marketing-header d-flex align-items-center justify-content-center">
+      <div *ngIf="isLargeScreen" class="header-content text-center text-white" data-aos="fade-in">
+        <h1 class="display-4">Digital Marketing Services</h1>
+        <p class="lead">Driving Success with Innovative Online Strategies</p>
+        <a class="btn btn-lg btn-primary" (click)="open()">Get a Consultation</a>
+      </div>
+      <div *ngIf="!isLargeScreen" class="header-content text-center text-white">
+        <h1 class="display-4">Digital Marketing Services</h1>
+        <p class="lead">Driving Success with Innovative Online Strategies</p>
+        <a class="btn btn-lg btn-primary" (click)="open()">Get a Consultation</a>
+      </div>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="container py-5">
+      <!-- Introduction Section -->
+      <div class="row align-items-center mb-5">
+        <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-right">
+          <img src="../../assets/pictures/portfolio_3.jpg" alt="Digital Marketing" class="img-fluid rounded shadow-lg">
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6 mb-4">
+          <img src="../../assets/pictures/portfolio_3.jpg" alt="Digital Marketing" class="img-fluid rounded shadow-lg">
+        </div>
+        <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+          <p>
+            Our Digital Marketing solutions are crafted to help your business thrive in a competitive online world. From SEO to social media, we create strategies that work.
+          </p>
+          <p>Our key services include:</p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Search Engine Optimization (SEO)</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Social Media Marketing</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Pay-Per-Click Campaigns</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Content Marketing</li>
+          </ul>
+          <a class="btn btn-primary mt-3" (click)="open()">Learn More</a>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6">
+          <p>
+            Our Digital Marketing solutions are crafted to help your business thrive in a competitive online world. From SEO to social media, we create strategies that work.
+          </p>
+          <p>Our key services include:</p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Search Engine Optimization (SEO)</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Social Media Marketing</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Pay-Per-Click Campaigns</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Content Marketing</li>
+          </ul>
+          <a class="btn btn-primary mt-3 alignbtn" (click)="open()">Learn More</a>
+        </div>
+      </div>
+  
+      <!-- Features Section -->
+      <div class="row">
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-chart-line fa-3x mb-3 text-warning"></i>
+            <h5 class="mb-3">Data-Driven Strategies</h5>
+            <p>Our campaigns are backed by thorough research and analytics to ensure maximum ROI.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-chart-line fa-3x mb-3 text-warning"></i>
+            <h5 class="mb-3">Data-Driven Strategies</h5>
+            <p>Our campaigns are backed by thorough research and analytics to ensure maximum ROI.</p>
+          </div>
+        </div>
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-thumbs-up fa-3x mb-3 text-success"></i>
+            <h5 class="mb-3">Engaging Content</h5>
+            <p>Create impactful content that resonates with your target audience.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-thumbs-up fa-3x mb-3 text-success"></i>
+            <h5 class="mb-3">Engaging Content</h5>
+            <p>Create impactful content that resonates with your target audience.</p>
+          </div>
+        </div>
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-dollar-sign fa-3x mb-3 text-info"></i>
+            <h5 class="mb-3">Cost-Effective Solutions</h5>
+            <p>We deliver high-quality results while staying within your budget.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-dollar-sign fa-3x mb-3 text-info"></i>
+            <h5 class="mb-3">Cost-Effective Solutions</h5>
+            <p>We deliver high-quality results while staying within your budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

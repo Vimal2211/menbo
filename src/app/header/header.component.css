@@ -1,0 +1,34 @@
+/* Default nav-link style */
+.navbar-nav .nav-link {
+    color: #000;
+    /* Default text color */
+    padding: 5px 10px;
+    /* Add padding */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Smooth transitions */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    /* Text color change on hover */
+}
+
+/* Active state for the selected link */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    /* Bold text for active state */
+    color: #007bff;
+    /* Highlighted color for active state */
+    background-color: #f0f0f0;
+    /* Optional background for active state */
+    border-radius: 5px;
+    /* Rounded edges */
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+    /* Active indicator color */
+}

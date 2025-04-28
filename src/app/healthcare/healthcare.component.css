@@ -1,0 +1,175 @@
+/* healthcare.component.css */
+
+/* General Section Styling */
+.healthcare-section {
+    position: relative;
+    background-color: #f8f9fa;
+    overflow: hidden;
+  }
+
+  .intro{
+    background-image: url('../../assets/banner/healthcare.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Introduction Styling */
+  .healthcare-section .intro h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:white;
+  }
+  .healthcare-section .intro p.lead {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  /* Services Offered Styling */
+  .healthcare-section .services .service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 255px; /* Set a minimum height for uniformity */
+    text-align: center;
+  }
+  .healthcare-section .services .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .healthcare-section .services .service-card h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  .healthcare-section .services .service-card p {
+    color: #555555;
+  }
+  
+  /* Why Choose Us Styling */
+  .healthcare-section .why-choose-us .feature {
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .healthcare-section .why-choose-us .feature:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .healthcare-section .why-choose-us .feature h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  .healthcare-section .why-choose-us .feature p {
+    color: #555555;
+  }
+  
+  /* Success Stories Styling */
+  .healthcare-section .success-stories .story {
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .healthcare-section .success-stories .story:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .healthcare-section .success-stories .story img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  .healthcare-section .success-stories .story h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  .healthcare-section .success-stories .story p {
+    color: #555555;
+  }
+  
+  /* Our Process Styling */
+  .healthcare-section .our-process .step {
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .healthcare-section .our-process .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .healthcare-section .our-process .step h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  .healthcare-section .our-process .step p {
+    color: #555555;
+  }
+  
+  /* Call to Action Styling */
+  .healthcare-section .cta {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  .healthcare-section .cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .healthcare-section .cta p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .healthcare-section .cta .btn-primary {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .healthcare-section .cta .btn-primary:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+  }
+  
+  /* Decorative Elements Styling */
+  .healthcare-decor {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .healthcare-section .success-stories .story img,
+  .healthcare-section .services .service-card,
+  .healthcare-section .why-choose-us .feature,
+  .healthcare-section .our-process .step {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767.98px) {
+    .healthcare-decor {
+      display: none;
+    }
+    .healthcare-section .cta {
+      padding: 20px 10px;
+    }
+  }
+  

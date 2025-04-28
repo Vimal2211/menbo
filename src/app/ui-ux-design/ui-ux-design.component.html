@@ -1,0 +1,444 @@
+<!-- ui-ux-design.component.html -->
+
+<section id="uiux-design" class="uiux-design-section">
+    <!-- Header with Background Image -->
+    <div class="uiux-header text-center d-flex align-items-center justify-content-center">
+      <div *ngIf="isLargeScreen" class="header-content" data-aos="fade-in">
+        <h1 class="header-title">UI/UX Design</h1>
+        <p class="header-subtitle">Crafting Exceptional User Experiences and Intuitive Interfaces</p>
+        <a (click)="open()" class="btn btn-primary btn-lg mt-4">Get Started</a>
+      </div>
+      <div *ngIf="!isLargeScreen" class="header-content">
+        <h1 class="header-title">UI/UX Design</h1>
+        <p class="header-subtitle">Crafting Exceptional User Experiences and Intuitive Interfaces</p>
+        <a (click)="open()" class="btn btn-primary btn-lg mt-4">Get Started</a>
+      </div>
+    </div>
+  
+    <div class="container py-5">
+      <!-- Overview and Features -->
+      <div class="row align-items-center mb-5">
+        <!-- Image Column -->
+        <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-right">
+          <img src="../../assets/service/ui_ux.jpg" alt="UI/UX Design" class="img-fluid rounded shadow">
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6 mb-4">
+          <img src="../../assets/service/ui_ux.jpg" alt="UI/UX Design" class="img-fluid rounded shadow">
+        </div>
+        <!-- Content Column -->
+        <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+          <p>At Menbo Technology, our UI/UX Design services are dedicated to creating user-centric and visually appealing interfaces that enhance user satisfaction and engagement. We focus on understanding your users' needs and behaviors to deliver seamless and intuitive experiences across all platforms.</p>
+          <ul class="uiux-features list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>User Research and Analysis</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Wireframing and Prototyping</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Visual Design and Branding</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Usability Testing</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Responsive and Adaptive Design</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary mt-3">Get Started</a>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6">
+          <p>At Menbo Technology, our UI/UX Design services are dedicated to creating user-centric and visually appealing interfaces that enhance user satisfaction and engagement. We focus on understanding your users' needs and behaviors to deliver seamless and intuitive experiences across all platforms.</p>
+          <ul class="uiux-features list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>User Research and Analysis</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Wireframing and Prototyping</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Visual Design and Branding</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Usability Testing</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Responsive and Adaptive Design</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary mt-3">Get Started</a>
+        </div>
+      </div>
+  
+      <!-- Design Philosophy -->
+      <div class="design-philosophy mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Our Design Philosophy</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Our Design Philosophy</h3>
+        <p *ngIf="isLargeScreen" data-aos="fade-up">We believe that great design is not just about aesthetics but about creating meaningful interactions. Our approach centers around empathy, ensuring that every design decision enhances the user experience and aligns with your business objectives.</p>
+        <p *ngIf="!isLargeScreen">We believe that great design is not just about aesthetics but about creating meaningful interactions. Our approach centers around empathy, ensuring that every design decision enhances the user experience and aligns with your business objectives.</p>
+        <div class="philosophy-points row">
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-heart fa-3x mb-3 text-danger"></i>
+              <h5>Empathy</h5>
+              <p>Understanding user needs and emotions to create relatable designs.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-heart fa-3x mb-3 text-danger"></i>
+              <h5>Empathy</h5>
+              <p>Understanding user needs and emotions to create relatable designs.</p>
+            </div>
+          </div>
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-brain fa-3x mb-3 text-warning"></i>
+              <h5>Innovation</h5>
+              <p>Leveraging the latest trends and technologies to stay ahead.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-brain fa-3x mb-3 text-warning"></i>
+              <h5>Innovation</h5>
+              <p>Leveraging the latest trends and technologies to stay ahead.</p>
+            </div>
+          </div>
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-cogs fa-3x mb-3 text-info"></i>
+              <h5>Functionality</h5>
+              <p>Ensuring designs are not only beautiful but also highly functional.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="philosophy-point text-center">
+              <i class="fa-solid fa-cogs fa-3x mb-3 text-info"></i>
+              <h5>Functionality</h5>
+              <p>Ensuring designs are not only beautiful but also highly functional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Tools We Use -->
+      <div class="tools-we-use mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Tools We Use</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Tools We Use</h3>
+        <div class="tools-icons text-center">
+          <i *ngIf="isLargeScreen" class="fab fa-adobe fa-3x m-3 tool-icon" data-aos="zoom-in"></i> <!-- Adobe Creative Cloud -->
+          <i *ngIf="!isLargeScreen" class="fab fa-adobe fa-3x m-3 tool-icon"></i> <!-- Adobe Creative Cloud -->
+          <i *ngIf="isLargeScreen" class="fab fa-sketch fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="100"></i> <!-- Sketch -->
+          <i *ngIf="!isLargeScreen" class="fab fa-sketch fa-3x m-3 tool-icon" ></i> <!-- Sketch -->
+          <i *ngIf="isLargeScreen" class="fab fa-figma fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="200"></i> <!-- Figma -->
+          <i *ngIf="!isLargeScreen" class="fab fa-figma fa-3x m-3 tool-icon"></i> <!-- Figma -->
+          <i *ngIf="isLargeScreen" class="fab fa-invision fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="300"></i> <!-- InVision -->
+          <i *ngIf="!isLargeScreen" class="fab fa-invision fa-3x m-3 tool-icon"></i> <!-- InVision -->
+          <i *ngIf="isLargeScreen" class="fas fa-paint-brush fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="400"></i> <!-- Paint Tool for mockups -->
+          <i *ngIf="!isLargeScreen" class="fas fa-paint-brush fa-3x m-3 tool-icon" ></i> <!-- Paint Tool for mockups -->
+          <i *ngIf="isLargeScreen" class="fab fa-adobe fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="500"></i> <!-- Adobe XD -->
+          <i *ngIf="!isLargeScreen" class="fab fa-adobe fa-3x m-3 tool-icon"></i> <!-- Adobe XD -->
+          <!-- <i class="fab fa-adobe fa-3x m-3 tool-icon" data-aos="zoom-in"></i>
+          <i class="fab fa-sketch fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="100"></i>
+          <i class="fab fa-figma fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="200"></i>
+          <i class="fab fa-invision fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="300"></i>
+          <i class="fab fa-figma fa-3x m-3 tool-icon" data-aos="zoom-in" data-aos-delay="400"></i> -->
+        </div>
+      </div>
+  
+      <!-- Extended Portfolio Gallery -->
+      <!-- <div class="extended-portfolio-gallery mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Our Portfolio</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Our Portfolio</h3>
+        <div class="portfolio-categories text-center mb-4">
+          <button class="btn btn-outline-primary m-1 active" (click)="filterPortfolio('all')">All</button>
+          <button class="btn btn-outline-primary m-1" (click)="filterPortfolio('web')">Web Design</button>
+          <button class="btn btn-outline-primary m-1" (click)="filterPortfolio('mobile')">Mobile Design</button>
+          <button class="btn btn-outline-primary m-1" (click)="filterPortfolio('ecommerce')">E-Commerce</button>
+        </div>
+        <div class="row g-3 portfolio-items">
+          <div class="col-md-4 portfolio-item" *ngFor="let item of filteredPortfolioItems" [attr.data-category]="item.category" data-aos="zoom-in">
+            <div class="portfolio-card position-relative">
+              <img [src]="'../../assets/pictures/' + item.image" [alt]="item.alt" class="img-fluid rounded">
+              <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                <a [href]="'../../assets/pictures/' + item.image" class="btn btn-light" target="_blank">
+                  <i class="fa-solid fa-eye fa-lg"></i> View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="extended-portfolio-gallery mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Our Portfolio</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Our Portfolio</h3>
+      
+        <!-- Portfolio Categories -->
+        <div class="portfolio-categories text-center mb-4">
+          <button
+            class="btn btn-outline-primary m-1"
+            [class.active]="activeCategory === 'all'"
+            (click)="filterPortfolio('all')"
+          >
+            All
+          </button>
+          <button
+            class="btn btn-outline-primary m-1"
+            [class.active]="activeCategory === 'web'"
+            (click)="filterPortfolio('web')"
+          >
+            Web Design
+          </button>
+          <button
+            class="btn btn-outline-primary m-1"
+            [class.active]="activeCategory === 'mobile'"
+            (click)="filterPortfolio('mobile')"
+          >
+            Mobile Design
+          </button>
+          <button
+            class="btn btn-outline-primary m-1"
+            [class.active]="activeCategory === 'ecommerce'"
+            (click)="filterPortfolio('ecommerce')"
+          >
+            E-Commerce
+          </button>
+        </div>
+      
+        <!-- Portfolio Items -->
+        <div class="row g-3 portfolio-items">
+          <ng-container *ngIf="isLargeScreen; else noAos">
+            <div
+              class="col-md-4 portfolio-item"
+              *ngFor="let item of filteredPortfolioItems"
+              [attr.data-category]="item.category"
+              data-aos="zoom-in"
+            >
+              <div class="portfolio-card position-relative">
+                <img
+                  [src]="'../../assets/pictures/' + item.image"
+                  [alt]="item.alt"
+                  class="img-fluid rounded"
+                />
+                <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                  <a
+                    [href]="'../../assets/pictures/' + item.image"
+                    class="btn btn-light"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-eye fa-lg"></i> View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        
+          <ng-template #noAos>
+            <div
+              class="col-md-4 portfolio-item"
+              *ngFor="let item of filteredPortfolioItems"
+              [attr.data-category]="item.category"
+            >
+              <div class="portfolio-card position-relative">
+                <img
+                  [src]="'../../assets/pictures/' + item.image"
+                  [alt]="item.alt"
+                  class="img-fluid rounded"
+                />
+                <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                  <a
+                    [href]="'../../assets/pictures/' + item.image"
+                    class="btn btn-light"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-eye fa-lg"></i> View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <!-- <div  class="col-md-4 portfolio-item" *ngFor="let item of filteredPortfolioItems" [attr.data-category]="item.category" data-aos="zoom-in">
+            <div class="portfolio-card position-relative">
+              <img
+                [src]="'../../assets/pictures/' + item.image"
+                [alt]="item.alt"
+                class="img-fluid rounded"
+              />
+              <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                <a
+                  [href]="'../../assets/pictures/' + item.image"
+                  class="btn btn-light"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-eye fa-lg"></i> View
+                </a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+  
+      <!-- Meet the Team -->
+      <div class="meet-the-team mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Meet Our UI/UX Designers</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Meet Our UI/UX Designers</h3>
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_1.jpeg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+              <h5>Sudhan J</h5>
+              <p class="text-muted">Senior UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-dribbble fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_1.jpeg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+              <h5>Sudhan J</h5>
+              <p class="text-muted">Senior UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-dribbble fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_2.jpeg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+              <h5>Karthik</h5>
+              <p class="text-muted">UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4" >
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_2.jpeg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+              <h5>Karthik</h5>
+              <p class="text-muted">UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_3.jpeg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+              <h5>Gokul</h5>
+              <p class="text-muted">Junior UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="team-member text-center">
+              <img src="../../assets/profile/Designer_3.jpeg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+              <h5>Gokul</h5>
+              <p class="text-muted">Junior UI/UX Designer</p>
+              <div class="social-icons">
+                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+  
+      <!-- Client Success Stories -->
+      <div class="client-success-stories mb-5">
+        <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Client Success Stories</h3>
+        <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Client Success Stories</h3>
+        <div class="success-stories row g-4">
+          <!-- Success Story 1 -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-star fa-2x text-primary"></i>
+              </div>
+              <div>
+                <h5>Enhanced User Engagement</h5>
+                <p>By redesigning the user interface of their e-commerce platform, we increased user engagement by 50% and boosted sales by 30% within six months.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-star fa-2x text-primary"></i>
+              </div>
+              <div>
+                <h5>Enhanced User Engagement</h5>
+                <p>By redesigning the user interface of their e-commerce platform, we increased user engagement by 50% and boosted sales by 30% within six months.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Success Story 2 -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-heart fa-2x text-danger"></i>
+              </div>
+              <div>
+                <h5>Improved Mobile App Usability</h5>
+                <p>Our UX improvements on the client's mobile app led to a 40% increase in user retention and a 25% rise in positive reviews.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-heart fa-2x text-danger"></i>
+              </div>
+              <div>
+                <h5>Improved Mobile App Usability</h5>
+                <p>Our UX improvements on the client's mobile app led to a 40% increase in user retention and a 25% rise in positive reviews.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Success Story 3 -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-chart-line fa-2x text-success"></i>
+              </div>
+              <div>
+                <h5>Streamlined Onboarding Process</h5>
+                <p>We revamped the onboarding process for a SaaS product, reducing user drop-off rates by 35% and increasing conversion rates by 20%.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-chart-line fa-2x text-success"></i>
+              </div>
+              <div>
+                <h5>Streamlined Onboarding Process</h5>
+                <p>We revamped the onboarding process for a SaaS product, reducing user drop-off rates by 35% and increasing conversion rates by 20%.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Success Story 4 -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-thumbs-up fa-2x text-info"></i>
+              </div>
+              <div>
+                <h5>Redesigned Corporate Website</h5>
+                <p>Our redesign of the corporate website resulted in a 60% increase in website traffic and a 45% growth in lead generation.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <div class="success-story d-flex">
+              <div class="success-story-icon me-3">
+                <i class="fa-solid fa-thumbs-up fa-2x text-info"></i>
+              </div>
+              <div>
+                <h5>Redesigned Corporate Website</h5>
+                <p>Our redesign of the corporate website resulted in a 60% increase in website traffic and a 45% growth in lead generation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more success stories as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,0 +1,66 @@
+<div *ngIf="isLoading" class="loader-overlay">
+  <div class="loader"></div>
+</div>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Services Column -->
+        <div class="col-md-4">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li (click)="openweb()"><a class="text-light" style="cursor: pointer;">Web Development</a></li>
+            <li (click)="openMob()"><a class="text-light" style="cursor: pointer;">Mobile App Development</a></li>
+            <li (click)="openUIUX()"><a class="text-light" style="cursor: pointer;">UI/UX Design</a></li>
+            <li (click)="openDigitalMarketing()"><a class="text-light" style="cursor: pointer;">Digital Marketing</a></li>
+            <li (click)="openSEO()"><a class="text-light" style="cursor: pointer;">SEO</a></li>
+            <!-- <li (click)="openCons()"><a class="text-light" style="cursor: pointer;">IT Consulting</a></li> -->
+          </ul>
+        </div>
+
+        <!-- Industries Column -->
+        <!-- <div class="col-md-3">
+          <h5>Industries</h5>
+          <ul class="list-unstyled">
+            <li (click)="openinsurance()"><a class="text-light" style="cursor: pointer;">Insurance</a></li>
+            <li (click)="openhealth()"><a class="text-light" style="cursor: pointer;">Healthcare</a></li>
+            <li (click)="openecom()"><a class="text-light" style="cursor: pointer;">eCommerce & Retail</a></li>
+            <li (click)="openelogistic()"><a class="text-light" style="cursor: pointer;">Logistics & Transportation</a></li>
+            <li><a href="#" class="text-light" style="cursor: pointer;">Construction</a></li>
+            <li><a href="#" class="text-light" style="cursor: pointer;">Real Estate</a></li>
+          </ul>
+        </div> -->
+
+        <!-- Company Column -->
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li (click)="openabout()"><a class="text-light" style="cursor: pointer;">About</a></li>
+            <!-- <li><a href="#" class="text-light">Team</a></li> -->
+            <li (click)="openpolicy()"><a class="text-light" style="cursor: pointer;">Privacy Policy</a></li>
+            <li (click)="openterms()"><a class="text-light" style="cursor: pointer;">Terms of Service</a></li>
+            <!-- <li (click)="openContact()"><a class="text-light" style="cursor: pointer;">Contacts</a></li> -->
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email: <a href="mailto:support@menbotechnologies.in" class="text-light"
+                style="cursor: pointer;">support&#64;menbotechnologies.in</a></li>
+            <li>Phone: <a href="tel:+919841813134" class="text-light" >+91 9841813134</a></li>
+            <li>Address: <a (click)="openMapwithMarker()" class="text-light" style="cursor: pointer;">#No F3, 1st floor, Pallava Enclave Apartment, Bharathi Nagar Main Road, Pallavaram, Chennai, Tamil Nadu 600043, India
+              Follow Us</a></li>
+          </ul>
+          <!-- <p>Email: <a href="mailto:support@menbotechnologies.in" class="text-light">support&#64;menbotechnologies.in</a>
+          </p>
+          <p>Phone: <a href="tel:+919841813134" class="text-light">+91 9841813134</a></p>
+          <p>Address: <a href="tel:+919841813134" class="text-light">+91 9841813134</a></p> -->
+          <!-- <p>Telephone: <a href="tel:+442038870078" class="text-light">044 10 6789 5432</a></p> -->
+          <!-- <p><a href="#" class="text-light">More contacts</a></p> -->
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3">
+      <p>&copy; {{ currentYear }} Menbo Technologies. All Rights Reserved.</p>
+    </div>
+  </footer>

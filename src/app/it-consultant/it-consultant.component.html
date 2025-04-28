@@ -1,0 +1,120 @@
+<!-- it-consultant.component.html -->
+<section id="it-consultant" class="it-consultant-section">
+  
+    <!-- Header with Background Image and Centered Text -->
+    <div class="consultant-header d-flex align-items-center justify-content-center">
+      <div *ngIf="isLargeScreen"  class="header-content text-center text-white" data-aos="fade-in">
+        <h1 class="display-4">IT Consulting Services</h1>
+        <p class="lead">Empowering Your Business with Innovative IT Solutions</p>
+        <a (click)="open()" class="btn btn-lg btn-primary lg:mt-3">Get a Consultation</a>
+      </div>
+      <div *ngIf="!isLargeScreen"  class="header-content text-center text-white" >
+        <h1 class="display-4">IT Consulting Services</h1>
+        <p class="lead">Empowering Your Business with Innovative IT Solutions</p>
+        <a (click)="open()" class="btn btn-lg btn-primary lg:mt-3">Get a Consultation</a>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container py-5">
+      
+      <!-- Introduction Section -->
+      <div class="row align-items-center mb-5">
+        <!-- Image Section -->
+        <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-right">
+          <img src="../../assets/pictures/consult1.jpg" alt="IT Consulting" class="img-fluid rounded shadow-lg">
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6 mb-4" >
+          <img src="../../assets/pictures/consult1.jpg" alt="IT Consulting" class="img-fluid rounded shadow-lg">
+        </div>
+        
+        <!-- Content Section -->
+        <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+          <p>
+            At Menbo Technology, our IT Consulting services are designed to help your business navigate the ever-evolving technological landscape. We provide expert advice and tailored solutions to ensure your business operations are efficient, secure, and scalable.
+          </p>
+          <p>
+            Our team of experienced consultants will work closely with you to understand your unique business needs and challenges. We specialize in:
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Digital Transformation</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>IT Strategy Planning</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Cybersecurity Solutions</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Cloud Computing Services</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Data Analytics and Business Intelligence</li>
+          </ul>
+          <a (click)="open()" class="btn btn-primary mt-3">Get a Consultation</a>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-6" >
+          <p>
+            At Menbo Technology, our IT Consulting services are designed to help your business navigate the ever-evolving technological landscape. We provide expert advice and tailored solutions to ensure your business operations are efficient, secure, and scalable.
+          </p>
+          <p>
+            Our team of experienced consultants will work closely with you to understand your unique business needs and challenges. We specialize in:
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Digital Transformation</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>IT Strategy Planning</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Cybersecurity Solutions</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Cloud Computing Services</li>
+            <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Data Analytics and Business Intelligence</li>
+          </ul>
+          <a (click)="open()" class="btn btn-primary mt-3 alignbtn">Get a Consultation</a>
+        </div>
+      </div>
+      
+      <!-- Features Section -->
+      <div class="row">
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-lightbulb fa-3x mb-3 text-success"></i>
+            <h5 class="mb-3">Innovative Solutions</h5>
+            <p>We leverage the latest technologies to provide cutting-edge solutions tailored to your business needs.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-lightbulb fa-3x mb-3 text-success"></i>
+            <h5 class="mb-3">Innovative Solutions</h5>
+            <p>We leverage the latest technologies to provide cutting-edge solutions tailored to your business needs.</p>
+          </div>
+        </div>
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-shield-alt fa-3x mb-3 text-danger"></i>
+            <h5 class="mb-3">Security Focused</h5>
+            <p>Our strategies ensure your business data is secure and protected against potential threats.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-shield-alt fa-3x mb-3 text-danger"></i>
+            <h5 class="mb-3">Security Focused</h5>
+            <p>Our strategies ensure your business data is secure and protected against potential threats.</p>
+          </div>
+        </div>
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-clock fa-3x mb-3 text-info"></i>
+            <h5 class="mb-3">Timely Delivery</h5>
+            <p>We understand the importance of deadlines and ensure timely delivery of all our consulting projects.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4 h-100">
+            <i class="fa-solid fa-clock fa-3x mb-3 text-info"></i>
+            <h5 class="mb-3">Timely Delivery</h5>
+            <p>We understand the importance of deadlines and ensure timely delivery of all our consulting projects.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="text-center mt-5">
+        <a (click)="open()" class="btn btn-lg btn-primary">Start Your Project Today</a>
+      </div>
+      
+    </div>
+    
+  </section>
+  

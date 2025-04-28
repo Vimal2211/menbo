@@ -1,0 +1,165 @@
+<!-- seo.component.html -->
+<section id="it-consultant" class="it-consultant-section">
+
+    <!-- Header with Background Image and Centered Text -->
+    <div class="consultant-header d-flex align-items-center justify-content-center">
+        <div *ngIf="isLargeScreen" class="header-content text-center text-white" data-aos="fade-in">
+            <h1 class="display-4">SEO Services</h1>
+            <p class="lead">Boost Your Rankings and Drive Organic Traffic</p>
+            <a (click)="open()" class="btn btn-lg btn-primary lg:mt-3">Get a Consultation</a>
+        </div>
+        <div *ngIf="!isLargeScreen" class="header-content text-center text-white">
+            <h1 class="display-4">SEO Services</h1>
+            <p class="lead">Boost Your Rankings and Drive Organic Traffic</p>
+            <a (click)="open()" class="btn btn-lg btn-primary lg:mt-3">Get a Consultation</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+
+        <!-- Introduction Section -->
+        <div class="row align-items-center mb-5">
+            <!-- Image Section -->
+            <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-right">
+                <img src="../../assets/pictures/seo1.jpg" alt="IT Consulting" class="img-fluid rounded shadow-lg">
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-6 mb-4">
+                <img src="../../assets/pictures/seo1.jpg" alt="IT Consulting" class="img-fluid rounded shadow-lg">
+            </div>
+
+            <!-- Content Section -->
+            <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+                <p>
+                    At Menbo Technology, our SEO services Dominate search results with our professional SEO
+                    services. Our approach ensures long-term visibility and higher rankings on Google.
+                </p>
+                <p>
+                    Our team of experienced consultants will work closely with you to understand your unique business
+                    needs and challenges. We specialize in:
+                </p>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Keyword Research and Strategy</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>On-Page Optimization</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Technical SEO Audits</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Link Building</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Local SEO</li>
+                </ul>
+                <a class="btn btn-primary mt-3 alignbtn" (click)="open()">Get a SEO Audit</a>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-6">
+                <p>
+                    At Menbo Technology, our SEO services Dominate search results with our professional SEO
+                    services. Our approach ensures long-term visibility and higher rankings on Google.
+                </p>
+                <p>
+                    Our team of experienced consultants will work closely with you to understand your unique business
+                    needs and challenges. We specialize in:
+                </p>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Keyword Research and Strategy</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>On-Page Optimization</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Technical SEO Audits</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Link Building</li>
+                    <li><i class="fa-solid fa-check-circle text-primary me-2"></i>Local SEO</li>
+                </ul>
+                <a class="btn btn-primary mt-3 alignbtn" (click)="open()">Get a SEO Audit</a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row">
+            <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-chart-line fa-3x mb-3 text-warning"></i>
+                    <h5 class="mb-3">Increased Visibility</h5>
+                    <p>Our SEO strategies help your website appear higher in search results and attract more organic
+                        traffic.</p>
+                </div>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-chart-line fa-3x mb-3 text-warning"></i>
+                    <h5 class="mb-3">Increased Visibility</h5>
+                    <p>Our SEO strategies help your website appear higher in search results and attract more organic
+                        traffic.</p>
+                </div>
+            </div>
+            <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-search fa-3x mb-3 text-success"></i>
+                    <h5 class="mb-3">Advanced Keyword Targeting</h5>
+                    <p>We target the most relevant and profitable keywords to bring qualified leads to your business.
+                    </p>
+                </div>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-search fa-3x mb-3 text-success"></i>
+                    <h5 class="mb-3">Advanced Keyword Targeting</h5>
+                    <p>We target the most relevant and profitable keywords to bring qualified leads to your business.
+                    </p>
+                </div>
+            </div>
+            <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-rocket fa-3x mb-3 text-info"></i>
+                    <h5 class="mb-3">Sustainable Growth</h5>
+                    <p>We focus on building long-term SEO strategies that drive consistent growth and improvement in
+                        rankings.</p>
+                </div>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-rocket fa-3x mb-3 text-info"></i>
+                    <h5 class="mb-3">Sustainable Growth</h5>
+                    <p>We focus on building long-term SEO strategies that drive consistent growth and improvement in
+                        rankings.</p>
+                </div>
+            </div>
+
+            <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-link fa-3x mb-3 text-danger"></i>
+                    <h5 class="mb-3">Quality Link Building</h5>
+                    <p>We implement ethical link-building strategies to improve domain authority and trustworthiness of
+                        your website.</p>
+                </div>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-link fa-3x mb-3 text-danger"></i>
+                    <h5 class="mb-3">Quality Link Building</h5>
+                    <p>We implement ethical link-building strategies to improve domain authority and trustworthiness of
+                        your website.</p>
+                </div>
+            </div>
+
+
+            <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-cogs fa-3x mb-3 text-primary"></i>
+                    <h5 class="mb-3">Technical SEO</h5>
+                    <p>We optimize your website’s technical structure for faster load times and better search engine
+                        crawlability.</p>
+                </div>
+            </div>
+            <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+                <div class="feature-box text-center p-4 h-100">
+                    <i class="fa-solid fa-cogs fa-3x mb-3 text-primary"></i>
+                    <h5 class="mb-3">Technical SEO</h5>
+                    <p>We optimize your website’s technical structure for faster load times and better search engine
+                        crawlability.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+            <a (click)="open()" class="btn btn-lg btn-primary">Start Your Project Today</a>
+        </div>
+
+    </div>
+
+</section>

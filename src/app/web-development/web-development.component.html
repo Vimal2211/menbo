@@ -1,0 +1,518 @@
+<!-- web-development.component.html -->
+
+<!-- Header Section with Background Image and Centered Text -->
+<header class="hero" [ngStyle]="{'background-image': 'url(../../assets/pictures/mob.jpg)'}">
+  <div class="overlay"></div> <!-- Overlay for better text readability -->
+  <div class="hero-content">
+    <h1 *ngIf="isLargeScreen" class="display-4" data-aos="fade-down">Welcome to Menbo Technology</h1>
+    <h1 *ngIf="!isLargeScreen" class="display-4">Welcome to Menbo Technology</h1>
+    <p *ngIf="isLargeScreen" class="lead" data-aos="fade-up" data-aos-delay="200">Your Partner in Innovative Web
+      Solutions</p>
+    <p *ngIf="!isLargeScreen" class="lead">Your Partner in Innovative Web Solutions</p>
+    <a (click)="open()" *ngIf="isLargeScreen" class="btn btn-light btn-lg" data-aos="fade-up" data-aos-delay="400">Get
+      Started</a>
+    <a (click)="open()" *ngIf="!isLargeScreen" class="btn btn-light btn-lg">Get Started</a>
+  </div>
+</header>
+
+<!-- Web Development Section -->
+<section id="web-development" class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 *ngIf="isLargeScreen" class="section-title" data-aos="fade-down">Web Development</h2>
+      <h2 *ngIf="!isLargeScreen" class="section-title">Web Development</h2>
+      <p *ngIf="isLargeScreen" class="section-subtitle" data-aos="fade-up">Building Robust, Scalable, and Stunning Web
+        Solutions</p>
+      <p *ngIf="!isLargeScreen" class="section-subtitle">Building Robust, Scalable, and Stunning Web Solutions</p>
+    </div>
+
+    <!-- Introduction -->
+    <div class="row align-items-center mb-5">
+      <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-right">
+        <img src="../../assets/pictures/web1.jpg" alt="Web Development" class="img-fluid rounded shadow">
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-6">
+        <img src="../../assets/pictures/web1.jpg" alt="Web Development" class="img-fluid rounded shadow">
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+        <p>
+          At Menbo Technology, we specialize in creating dynamic and responsive websites tailored to your business
+          needs.
+          Our team leverages the latest technologies and best practices to deliver websites that not only look
+          stunning but
+          also perform seamlessly across all devices.
+        </p>
+        <p>
+          Whether you're looking to establish an online presence, enhance your existing website, or develop a complex
+          web application,
+          we have the expertise to bring your vision to life. Our commitment to excellence ensures that your website
+          is optimized
+          for performance, security, and scalability.
+        </p>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-6">
+        <p>
+          At Menbo Technology, we specialize in creating dynamic and responsive websites tailored to your business
+          needs.
+          Our team leverages the latest technologies and best practices to deliver websites that not only look
+          stunning but
+          also perform seamlessly across all devices.
+        </p>
+        <p>
+          Whether you're looking to establish an online presence, enhance your existing website, or develop a complex
+          web application,
+          we have the expertise to bring your vision to life. Our commitment to excellence ensures that your website
+          is optimized
+          for performance, security, and scalability.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Offered -->
+    <div class="row">
+      <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
+          <h5 class="mb-3">Custom Web Development</h5>
+          <p>
+            Tailor-made websites built to meet your specific requirements, ensuring functionality and scalability.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
+          <h5 class="mb-3">Custom Web Development</h5>
+          <p>
+            Tailor-made websites built to meet your specific requirements, ensuring functionality and scalability.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-mobile-screen-button fa-3x mb-3 text-success"></i>
+          <h5 class="mb-3">Responsive Design</h5>
+          <p>
+            Designing websites that provide an optimal viewing experience across a wide range of devices.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-mobile-screen-button fa-3x mb-3 text-success"></i>
+          <h5 class="mb-3">Responsive Design</h5>
+          <p>
+            Designing websites that provide an optimal viewing experience across a wide range of devices.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-shield-alt fa-3x mb-3 text-warning"></i>
+          <h5 class="mb-3">Security & Maintenance</h5>
+          <p>
+            Implementing robust security measures and providing ongoing maintenance to keep your website safe and
+            up-to-date.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4">
+        <div class="service-card text-center p-4">
+          <i class="fa-solid fa-shield-alt fa-3x mb-3 text-warning"></i>
+          <h5 class="mb-3">Security & Maintenance</h5>
+          <p>
+            Implementing robust security measures and providing ongoing maintenance to keep your website safe and
+            up-to-date.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Process -->
+    <div class="row mt-2">
+      <div *ngIf="isLargeScreen" class="col-12 text-center mb-4" data-aos="fade-down">
+        <h3>Our Development Process</h3>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-12 text-center mb-4">
+        <h3>Our Development Process</h3>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-lightbulb fa-2x mb-2 text-success"></i>
+          <h5>1. Discovery</h5>
+          <p>
+            Understanding your business needs and project requirements to lay a solid foundation.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-3">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-lightbulb fa-2x mb-2 text-success"></i>
+          <h5>1. Discovery</h5>
+          <p>
+            Understanding your business needs and project requirements to lay a solid foundation.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-pencil-ruler fa-2x mb-2 text-primary"></i>
+          <h5>2. Design</h5>
+          <p>
+            Crafting intuitive and visually appealing designs that align with your brand identity.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-3">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-pencil-ruler fa-2x mb-2 text-primary"></i>
+          <h5>2. Design</h5>
+          <p>
+            Crafting intuitive and visually appealing designs that align with your brand identity.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-code fa-2x mb-2 text-warning"></i>
+          <h5>3. Development</h5>
+          <p>
+            Building robust and scalable web applications using the latest technologies.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-3">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-code fa-2x mb-2 text-warning"></i>
+          <h5>3. Development</h5>
+          <p>
+            Building robust and scalable web applications using the latest technologies.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-check-circle fa-2x mb-2 text-danger"></i>
+          <h5>4. Deployment</h5>
+          <p>
+            Launching your website and ensuring it runs smoothly in a live environment.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-3">
+        <div class="process-step text-center p-3">
+          <i class="fa-solid fa-check-circle fa-2x mb-2 text-danger"></i>
+          <h5>4. Deployment</h5>
+          <p>
+            Launching your website and ensuring it runs smoothly in a live environment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies We Use -->
+    <div class="row mt-2">
+      <div *ngIf="isLargeScreen" class="col-12 text-center mb-4" data-aos="fade-down">
+        <h3>Technologies We Use</h3>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-12 text-center mb-4">
+        <h3>Technologies We Use</h3>
+      </div>
+      <div class="col-12">
+        <ul class="tech-list list-inline text-center">
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fab fa-html5 fa-3x text-danger"></i>
+            <p>HTML5</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-html5 fa-3x text-danger"></i>
+            <p>HTML5</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-css3-alt fa-3x text-primary"></i>
+            <p>CSS3</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-css3-alt fa-3x text-primary"></i>
+            <p>CSS3</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-js-square fa-3x text-warning"></i>
+            <p>JavaScript</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-js-square fa-3x text-warning"></i>
+            <p>JavaScript</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fab fa-angular fa-3x text-danger"></i>
+            <p>Angular</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-angular fa-3x text-danger"></i>
+            <p>Angular</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="500">
+            <i class="fab fa-react fa-3x text-primary"></i>
+            <p>React</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-react fa-3x text-primary"></i>
+            <p>React</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="600">
+            <i class="fab fa-node-js fa-3x text-success"></i>
+            <p>Node.js</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-node-js fa-3x text-success"></i>
+            <p>Node.js</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="700">
+            <i class="fas fa-database fa-3x text-info"></i>
+            <p>Databases</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fas fa-database fa-3x text-info"></i>
+            <p>Databases</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="800">
+            <i class="fab fa-bootstrap fa-3x text-primary"></i>
+            <p>Bootstrap</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-bootstrap fa-3x text-primary"></i>
+            <p>Bootstrap</p>
+          </li>
+          <li *ngIf="isLargeScreen" class="list-inline-item" data-aos="zoom-in" data-aos-delay="900">
+            <i class="fab fa-sass fa-3x text-pink"></i>
+            <p>Sass</p>
+          </li>
+          <li *ngIf="!isLargeScreen" class="list-inline-item">
+            <i class="fab fa-sass fa-3x text-pink"></i>
+            <p>Sass</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="row mt-2">
+      <div *ngIf="isLargeScreen" class="col-12 text-center mb-4" data-aos="fade-down">
+        <h3>Our Portfolio</h3>
+        <p>Explore some of our recent projects and see the quality of our work.</p>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-12 text-center mb-4">
+        <h3>Our Portfolio</h3>
+        <p>Explore some of our recent projects and see the quality of our work.</p>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio1.jpg" alt="Project 1" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project One</h5>
+            <p>Responsive E-commerce Platform</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4 mb-4" >
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio1.jpg" alt="Project 1" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project One</h5>
+            <p>Responsive E-commerce Platform</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio2.jpg" alt="Project 2" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project Two</h5>
+            <p>Custom Content Management System</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio2.jpg" alt="Project 2" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project Two</h5>
+            <p>Custom Content Management System</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio_3.jpg" alt="Project 3" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project Three</h5>
+            <p>Interactive Web Application</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+        <div class="portfolio-item">
+          <img src="../../assets/pictures/portfolio_3.jpg" alt="Project 3" class="img-fluid rounded shadow">
+          <div class="portfolio-overlay">
+            <h5>Project Three</h5>
+            <p>Interactive Web Application</p>
+            <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View
+              Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </div>
+
+    <!-- Client Testimonials -->
+    <div class="row mt-2">
+      <div *ngIf="isLargeScreen" class="col-12 text-center mb-4" data-aos="fade-down">
+        <h3>What Our Clients Say</h3>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-12 text-center mb-4">
+        <h3>What Our Clients Say</h3>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-card p-4 shadow rounded bg-white">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../../assets/profile/Designer_1.jpeg" alt="Client 1" class="rounded-circle" width="50"
+              height="50">
+            <div class="ms-3">
+              <h5 class="mb-0">Jane Doe</h5>
+              <small>CEO, TechCorp</small>
+            </div>
+          </div>
+          <p>
+            "Menbo Technology transformed our outdated website into a modern, responsive platform that has significantly
+            increased our user engagement and sales. Their team was professional, timely, and a pleasure to work with."
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-6 mb-4">
+        <div class="testimonial-card p-4 shadow rounded bg-white">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../../assets/profile/Designer_1.jpeg" alt="Client 1" class="rounded-circle" width="50"
+              height="50">
+            <div class="ms-3">
+              <h5 class="mb-0">Jane Doe</h5>
+              <small>CEO, TechCorp</small>
+            </div>
+          </div>
+          <p>
+            "Menbo Technology transformed our outdated website into a modern, responsive platform that has significantly
+            increased our user engagement and sales. Their team was professional, timely, and a pleasure to work with."
+          </p>
+        </div>
+      </div>
+      <div *ngIf="isLargeScreen" class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-card p-4 shadow rounded bg-white">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../../assets/profile/Designer_2.jpeg" alt="Client 2" class="rounded-circle" width="50"
+              height="50">
+            <div class="ms-3">
+              <h5 class="mb-0">John Smith</h5>
+              <small>Marketing Manager, MarketGuru</small>
+            </div>
+          </div>
+          <p>
+            "The team at Menbo Technology delivered a custom web application that perfectly fits our business needs.
+            Their attention to detail and dedication to quality are unmatched."
+          </p>
+        </div>
+      </div>
+      <div *ngIf="!isLargeScreen" class="col-md-6 mb-4">
+        <div class="testimonial-card p-4 shadow rounded bg-white">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../../assets/profile/Designer_2.jpeg" alt="Client 2" class="rounded-circle" width="50"
+              height="50">
+            <div class="ms-3">
+              <h5 class="mb-0">John Smith</h5>
+              <small>Marketing Manager, MarketGuru</small>
+            </div>
+          </div>
+          <p>
+            "The team at Menbo Technology delivered a custom web application that perfectly fits our business needs.
+            Their attention to detail and dedication to quality are unmatched."
+          </p>
+        </div>
+      </div>
+      <!-- Add more testimonials as needed -->
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-2">
+      <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Modals -->
+
+<!-- Portfolio Modal 1 -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal1Label">Project One</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/pictures/portfolio1.jpg" alt="Project One" class="img-fluid mb-3">
+        <p><strong>Description:</strong> A fully responsive e-commerce platform built with Angular and Node.js,
+          featuring real-time inventory management, secure payment gateways, and an intuitive user interface.</p>
+        <p><strong>Technologies Used:</strong> Angular, Node.js, MongoDB, Bootstrap</p>
+        <!-- <a href="#" class="btn btn-primary" target="_blank">Visit Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 2 -->
+<div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal2Label">Project Two</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/pictures/portfolio2.jpg" alt="Project Two" class="img-fluid mb-3">
+        <p><strong>Description:</strong> A custom content management system (CMS) designed to streamline content
+          creation and management, built with Angular and Node.js for optimal performance and scalability.</p>
+        <p><strong>Technologies Used:</strong> Angular, Node.js, SQL, SCSS</p>
+        <!-- <a href="#" class="btn btn-primary" target="_blank">Visit Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 3 -->
+<div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal3Label">Project Three</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/pictures/portfolio_3.jpg" alt="Project Three" class="img-fluid mb-3">
+        <p><strong>Description:</strong> An interactive web application that enhances user engagement through real-time
+          data visualization and interactive features, built with Angular and D3.js.</p>
+        <p><strong>Technologies Used:</strong> Angular, D3.js, Node.js, MongoDB</p>
+        <!-- <a href="#" class="btn btn-primary" target="_blank">Visit Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>

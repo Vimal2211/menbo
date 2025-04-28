@@ -1,0 +1,105 @@
+.ecommerce-retail-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .ecommerce-header {
+    background-image: url('../../assets/banner/ecom.jpg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ecommerce-title {
+    font-size: 3.5em;
+    margin: 0;
+  }
+  
+  .ecommerce-subtitle {
+    font-size: 1.8em;
+    margin-top: 10px;
+  }
+  
+  .ecommerce-intro,
+  .ecommerce-features,
+  .ecommerce-benefits,
+  .ecommerce-testimonials,
+  .ecommerce-faqs,
+  .ecommerce-call-to-action {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .ecommerce-features ul,
+  .ecommerce-benefits ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .ecommerce-testimonials {
+    background-color: #e9ecef;
+  }
+  
+  .testimonial-card {
+    border-left: 4px solid #007bff;
+    padding: 15px 20px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .faq-item {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ecommerce-call-to-action {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  .ecommerce-call-to-action h2 {
+    color: white;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  

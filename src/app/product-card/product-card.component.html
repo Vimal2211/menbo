@@ -1,0 +1,580 @@
+<div id="top" class="mobile-development">
+    <!-- Header Section -->
+    <header class="bg-success text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Mobile App Development Services</h1>
+        <p class="lead">Innovative and User-Friendly Mobile Solutions</p>
+      </div>
+    </header>
+  
+    <!-- Introduction Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-right">
+            <img src="../../assets/pictures/mobile.jpeg" alt="Mobile Development" class="img-fluid rounded shadow">
+          </div>
+
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <img src="../../assets/pictures/mobile.jpeg" alt="Mobile Development" class="img-fluid rounded shadow">
+          </div>
+  
+          <!-- Content Section -->
+          <div *ngIf="isLargeScreen" class="col-md-6" data-aos="fade-left">
+            <h2>Why Choose Our Mobile App Development Services?</h2>
+            <p>At Menbo Technology, we specialize in creating high-performance mobile applications tailored to your business needs. Our team of experienced developers uses the latest technologies to ensure your app is scalable, secure, and user-friendly.</p>
+  
+            <ul>
+              <li><strong>Cross-Platform Development:</strong> Reach a wider audience with apps that work seamlessly on both iOS and Android.</li>
+              <li><strong>Custom Solutions:</strong> We build apps that are tailored to your specific requirements and business goals.</li>
+              <li><strong>UI/UX Design:</strong> Our designers create intuitive and engaging interfaces to enhance user experience.</li>
+              <li><strong>Maintenance & Support:</strong> We provide ongoing support to ensure your app remains up-to-date and performs optimally.</li>
+            </ul>
+  
+            <a (click)="open()" class="btn btn-primary mt-3">Get Started</a>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-6">
+            <h2>Why Choose Our Mobile Development Services?</h2>
+            <p>At Menbo Technology, we specialize in creating high-performance mobile applications tailored to your business needs. Our team of experienced developers uses the latest technologies to ensure your app is scalable, secure, and user-friendly.</p>
+  
+            <ul>
+              <li><strong>Cross-Platform Development:</strong> Reach a wider audience with apps that work seamlessly on both iOS and Android.</li>
+              <li><strong>Custom Solutions:</strong> We build apps that are tailored to your specific requirements and business goals.</li>
+              <li><strong>UI/UX Design:</strong> Our designers create intuitive and engaging interfaces to enhance user experience.</li>
+              <li><strong>Maintenance & Support:</strong> We provide ongoing support to ensure your app remains up-to-date and performs optimally.</li>
+            </ul>
+  
+            <a (click)="open()" class="btn btn-primary mt-3 alignbtn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Features Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Key Features of Our Mobile Apps</h3>
+        <div class="row">
+          <!-- Feature 1 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-mobile-screen-button fa-3x mb-3 text-success"></i>
+              <h5>Responsive Design</h5>
+              <p>Our apps adapt seamlessly to different screen sizes and orientations, ensuring a consistent user experience.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-mobile-screen-button fa-3x mb-3 text-success"></i>
+              <h5>Responsive Design</h5>
+              <p>Our apps adapt seamlessly to different screen sizes and orientations, ensuring a consistent user experience.</p>
+            </div>
+          </div>
+  
+          <!-- Feature 2 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-shield fa-3x mb-3 text-success"></i>
+              <h5>Security</h5>
+              <p>We implement robust security measures to protect your data and ensure the safety of your users.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-shield fa-3x mb-3 text-success"></i>
+              <h5>Security</h5>
+              <p>We implement robust security measures to protect your data and ensure the safety of your users.</p>
+            </div>
+          </div>
+  
+          <!-- Feature 3 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-cloud-upload-alt fa-3x mb-3 text-success"></i>
+              <h5>Cloud Integration</h5>
+              <p>Our apps integrate seamlessly with cloud services, providing scalability and flexibility for your business.</p>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card hover-card feature-box text-center p-4">
+              <i class="fa-solid fa-cloud-upload-alt fa-3x mb-3 text-success"></i>
+              <h5>Cloud Integration</h5>
+              <p>Our apps integrate seamlessly with cloud services, providing scalability and flexibility for your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Mobile Development Process Section -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Our Mobile Development Process</h3>
+        <div class="row">
+          <!-- Step 1 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-lightbulb fa-2x mb-3 text-success"></i>
+                <h5 class="card-title">Discovery & Planning</h5>
+                <p class="card-text">We begin by understanding your business needs and defining the project scope.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-lightbulb fa-2x mb-3 text-success"></i>
+                <h5 class="card-title">Discovery & Planning</h5>
+                <p class="card-text">We begin by understanding your business needs and defining the project scope.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 2 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-code fa-2x mb-3 text-primary"></i>
+                <h5 class="card-title">Development</h5>
+                <p class="card-text">Our developers bring your app to life with clean and efficient code.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-code fa-2x mb-3 text-primary"></i>
+                <h5 class="card-title">Development</h5>
+                <p class="card-text">Our developers bring your app to life with clean and efficient code.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Step 3 -->
+          <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-check-circle fa-2x mb-3 text-warning"></i>
+                <h5 class="card-title">Testing & Deployment</h5>
+                <p class="card-text">We rigorously test your app to ensure it meets all quality standards before launch.</p>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="!isLargeScreen" class="col-md-4">
+            <div class="card mb-4 shadow-sm hover-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-check-circle fa-2x mb-3 text-warning"></i>
+                <h5 class="card-title">Testing & Deployment</h5>
+                <p class="card-text">We rigorously test your app to ensure it meets all quality standards before launch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Success Stories Section -->
+    <!-- <section class="bg-light py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Our Success Stories</h3>
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="card mb-4 shadow-sm hover-card">
+              <img src="../../assets/service/e-com_2.jpeg" class="card-img-top rounded-top img-fluid" alt="Case Study 1">
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce App for Retail</h5>
+                <p class="card-text">We developed a feature-rich e-commerce app that boosted sales by 30% within the first quarter.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="card mb-4 shadow-sm hover-card">
+              <img src="../../assets/service/Healthcare.jpeg" class="card-img-top rounded-top img-fluid" alt="Case Study 2">
+              <div class="card-body">
+                <h5 class="card-title">Healthcare Management App</h5>
+                <p class="card-text">Our team created a robust healthcare app that improved patient management and care delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Success Stories Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5">Our Success Stories</h3>
+      <div class="row">
+        <!-- Success Story 1 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/ecom.jpg" class="card-img-top" alt="E-Commerce App for Retail">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce App for Retail</h5>
+              <p class="card-text">We developed a feature-rich e-commerce app that boosted sales by 30% within the first quarter, enhancing the online shopping experience.</p>
+              <!-- <a href="/case-studies/e-commerce" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/ecom.jpg" class="card-img-top" alt="E-Commerce App for Retail">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce App for Retail</h5>
+              <p class="card-text">We developed a feature-rich e-commerce app that boosted sales by 30% within the first quarter, enhancing the online shopping experience.</p>
+              <!-- <a href="/case-studies/e-commerce" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Success Story 2 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/health.jpeg" class="card-img-top" alt="Healthcare Management App">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Management App</h5>
+              <p class="card-text">Our team created a robust healthcare app that improved patient management and care delivery, resulting in a 40% reduction in administrative tasks.</p>
+              <!-- <a href="/case-studies/healthcare" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/health.jpeg" class="card-img-top" alt="Healthcare Management App">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Management App</h5>
+              <p class="card-text">Our team created a robust healthcare app that improved patient management and care delivery, resulting in a 40% reduction in administrative tasks.</p>
+              <!-- <a href="/case-studies/healthcare" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Success Story 3 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/finance.jpg" class="card-img-top" alt="Finance Tracking App">
+            <div class="card-body">
+              <h5 class="card-title">Finance Tracking App</h5>
+              <p class="card-text">We developed a finance tracking app that helped users manage their expenses better, leading to a 25% increase in savings within three months.</p>
+              <!-- <a href="/case-studies/finance" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/finance.jpg" class="card-img-top" alt="Finance Tracking App">
+            <div class="card-body">
+              <h5 class="card-title">Finance Tracking App</h5>
+              <p class="card-text">We developed a finance tracking app that helped users manage their expenses better, leading to a 25% increase in savings within three months.</p>
+              <!-- <a href="/case-studies/finance" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Success Story 4 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/travel.jpg" class="card-img-top" alt="Travel Booking App">
+            <div class="card-body">
+              <h5 class="card-title">Travel Booking App</h5>
+              <p class="card-text">Our travel booking app streamlined the booking process, leading to a 50% increase in user engagement and satisfaction ratings.</p>
+              <!-- <a href="/case-studies/travel" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/travel.jpg" class="card-img-top" alt="Travel Booking App">
+            <div class="card-body">
+              <h5 class="card-title">Travel Booking App</h5>
+              <p class="card-text">Our travel booking app streamlined the booking process, leading to a 50% increase in user engagement and satisfaction ratings.</p>
+              <!-- <a href="/case-studies/travel" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Success Story 5 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/fitness.jpg" class="card-img-top" alt="Fitness Tracking App">
+            <div class="card-body">
+              <h5 class="card-title">Fitness Tracking App</h5>
+              <p class="card-text">Our fitness app helped users track their workouts and diets, resulting in a community of over 100,000 active users in less than six months.</p>
+              <!-- <a href="/case-studies/fitness" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/fitness.jpg" class="card-img-top" alt="Fitness Tracking App">
+            <div class="card-body">
+              <h5 class="card-title">Fitness Tracking App</h5>
+              <p class="card-text">Our fitness app helped users track their workouts and diets, resulting in a community of over 100,000 active users in less than six months.</p>
+              <!-- <a href="/case-studies/fitness" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Success Story 6 -->
+        <div *ngIf="isLargeScreen" class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/realestate.jpg" class="card-img-top" alt="Real Estate Management App">
+            <div class="card-body">
+              <h5 class="card-title">Real Estate Management App</h5>
+              <p class="card-text">We designed a real estate app that enhanced property listing visibility, increasing inquiries by 60% in just three months.</p>
+              <!-- <a href="/case-studies/real-estate" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="../../assets/service/realestate.jpg" class="card-img-top" alt="Real Estate Management App">
+            <div class="card-body">
+              <h5 class="card-title">Real Estate Management App</h5>
+              <p class="card-text">We designed a real estate app that enhanced property listing visibility, increasing inquiries by 60% in just three months.</p>
+              <!-- <a href="/case-studies/real-estate" class="btn btn-success">Read More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Technologies We Use Section -->
+<section class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Technologies We Use</h3>
+      <div class="row">
+        <!-- Technology 1 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-react fa-3x mb-3 text-success"></i>
+            <h5>React Native</h5>
+            <p>We use React Native for building cross-platform mobile apps with a single codebase, ensuring efficient development and fast deployment.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-react fa-3x mb-3 text-success"></i>
+            <h5>React Native</h5>
+            <p>We use React Native for building cross-platform mobile apps with a single codebase, ensuring efficient development and fast deployment.</p>
+          </div>
+        </div>
+  
+        <!-- Technology 2 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-android fa-3x mb-3 text-success"></i>
+            <h5>Android</h5>
+            <p>Our expertise in native Android development allows us to create powerful and seamless apps tailored to the Android platform.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-android fa-3x mb-3 text-success"></i>
+            <h5>Android</h5>
+            <p>Our expertise in native Android development allows us to create powerful and seamless apps tailored to the Android platform.</p>
+          </div>
+        </div>
+  
+        <!-- Technology 3 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-apple fa-3x mb-3 text-success"></i>
+            <h5>iOS</h5>
+            <p>We develop native iOS apps with cutting-edge features, providing a premium experience for Apple users.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-apple fa-3x mb-3 text-success"></i>
+            <h5>iOS</h5>
+            <p>We develop native iOS apps with cutting-edge features, providing a premium experience for Apple users.</p>
+          </div>
+        </div>
+  
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-java fa-3x mb-3 text-success"></i>
+            <h5>Java</h5>
+            <p>Java is used for Android development, offering robust performance and a vast ecosystem of libraries.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-java fa-3x mb-3 text-success"></i>
+            <h5>Java</h5>
+            <p>Java is used for Android development, offering robust performance and a vast ecosystem of libraries.</p>
+          </div>
+        </div>
+  
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="700">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-node-js fa-3x mb-3 text-success"></i>
+            <h5>Node.js</h5>
+            <p>Node.js is used for backend development, allowing us to build scalable APIs for mobile applications.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-brands fa-node-js fa-3x mb-3 text-success"></i>
+            <h5>Node.js</h5>
+            <p>Node.js is used for backend development, allowing us to build scalable APIs for mobile applications.</p>
+          </div>
+        </div>
+  
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="900">
+          <div class="tech-box text-center p-4">
+            <i class="fa-solid fa-cloud fa-3x mb-3 text-success"></i>
+            <h5>Cloud Integration</h5>
+            <p>We utilize cloud services for scalability and flexibility, enabling seamless integration with mobile applications.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="tech-box text-center p-4">
+            <i class="fa-solid fa-cloud fa-3x mb-3 text-success"></i>
+            <h5>Cloud Integration</h5>
+            <p>We utilize cloud services for scalability and flexibility, enabling seamless integration with mobile applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Industries We Serve Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Industries We Serve</h3>
+      <div class="row">
+        <!-- Industry 1 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-store fa-3x mb-3 text-success"></i>
+            <h5>Retail</h5>
+            <p>Enhancing the shopping experience with intuitive e-commerce solutions and mobile platforms.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-store fa-3x mb-3 text-success"></i>
+            <h5>Retail</h5>
+            <p>Enhancing the shopping experience with intuitive e-commerce solutions and mobile platforms.</p>
+          </div>
+        </div>
+
+        <!-- Industry 2 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-heart fa-3x mb-3 text-success"></i>
+            <h5>Healthcare</h5>
+            <p>Developing secure and efficient healthcare management apps to improve patient care and administration.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-heart fa-3x mb-3 text-success"></i>
+            <h5>Healthcare</h5>
+            <p>Developing secure and efficient healthcare management apps to improve patient care and administration.</p>
+          </div>
+        </div>
+
+        <!-- Industry 3 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-graduation-cap fa-3x mb-3 text-success"></i>
+            <h5>Education</h5>
+            <p>Creating engaging educational apps that facilitate interactive learning and remote education.</p>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="industry-box text-center p-4">
+            <i class="fa-solid fa-graduation-cap fa-3x mb-3 text-success"></i>
+            <h5>Education</h5>
+            <p>Creating engaging educational apps that facilitate interactive learning and remote education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- FAQs Section -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What platforms do you develop for?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We develop mobile applications for both iOS and Android platforms using cross-platform technologies like React Native and Flutter to ensure maximum reach and performance.
+              </div>
+            </div>
+          </div>
+  
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How long does it take to develop a mobile app?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The development time varies based on the complexity and features of the app. On average, it takes between 3 to 6 months from initial planning to deployment.
+              </div>
+            </div>
+          </div>
+  
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What is the cost of developing a mobile app?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The cost depends on various factors such as app complexity, features, design requirements, and development time. We offer flexible pricing plans to suit different budgets.
+              </div>
+            </div>
+          </div>
+  
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Do you provide post-launch support?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we offer comprehensive maintenance and support services to ensure your app remains up-to-date, secure, and performs optimally after launch.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Call to Action Section -->
+    <section class="bg-success text-white text-center py-5">
+      <div class="container">
+        <h2>Ready to Transform Your Ideas into a Mobile App?</h2>
+        <p>Contact us today to get started on your mobile development journey.</p>
+        <a (click)="open()" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+      </div>
+    </section>
+    <!-- <button *ngIf="showbelowbtn" id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <a href="#" class=""><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+    </button> -->
+  </div>
+  

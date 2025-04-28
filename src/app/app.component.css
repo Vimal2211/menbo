@@ -1,0 +1,247 @@
+/* Custom Styles */
+
+body {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    min-height: 60vh;
+  }
+
+  .hero {
+    /* background: url('../assets/banner.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative; */
+    background-image: url('../assets/test.jpeg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for layering */
+    z-index: 1; /* Stack the background behind text */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1; /* Place it behind the text */
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card-body {
+    min-height: 225px; /* Set a minimum height for uniformity */
+    text-align: center;
+}
+.card-body i {
+    transition: color 0.3s ease;
+  }
+
+  .sIconf {
+    color: #545455;
+  }
+  .sIcont{
+    color: #545455;
+  }
+  .sIconi {
+    color:#545455;
+  }
+  
+  .sIconf i:hover {
+    cursor: pointer;
+    color: #2d09f7; /* Change to desired hover color */
+  }
+  .sIcont i:hover {
+    cursor: pointer;
+    color: #031c5c; /* Change to desired hover color */
+  }
+  .sIconi i:hover {
+    cursor: pointer;
+    color: #f53838; /* Change to desired hover color */
+  }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .overall{
+    padding: 6px 6px 6px 6px;
+} */
+
+#contact a {
+  color: #007bff;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #0056b3;
+}
+
+.social-icon{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  text-align: center; /* Center the icon horizontally */
+}
+
+.social-icon i {
+  color: #fff;
+}
+
+.sIconf {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+.sIcont {
+  background-color: #1da1f2; /* Twitter Blue */
+}
+
+.sIconi {
+  background-color: #e1306c; /* Instagram Pink */
+}
+
+.sIconf:hover {
+  background-color: #2d4373;
+}
+
+.sIcont:hover {
+  background-color: #0d95e8;
+}
+
+.sIconi:hover {
+  background-color: #c13584;
+}
+
+/* Carousel Section */
+/* Carousel Section */
+#carouselSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#serviceCarousel img {
+  height: 500px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Rounded control buttons */
+}
+
+.carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter transparent buttons */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Active indicator color */
+}
+
+/* #carouselSection img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+} */
+
+
+/* Default nav-link style */
+.navbar-nav .nav-link {
+  color: #000; /* Default text color */
+  padding: 5px 10px; /* Add padding */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Text color change on hover */
+}
+
+/* Active state for the selected link */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Bold text for active state */
+  color: #007bff; /* Highlighted color for active state */
+  background-color: #f0f0f0; /* Optional background for active state */
+  border-radius: 5px; /* Rounded edges */
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#services {
+  animation: grow 1s;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(.2);
+  }
+
+  100% {
+    transform: scale(1);
+}
+}
+
+.image-container{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container img{
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+}
+
+.image-container img:hover{
+  width: 100%;
+}
+
+
+
+
+
+  

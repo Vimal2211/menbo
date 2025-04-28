@@ -1,0 +1,129 @@
+/* it-consultant.component.css */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+/* Consultant Header Styling */
+.consultant-header {
+    background-image: url('../../assets/pictures/itcons.jpg'); /* Replace with your desired background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .consultant-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .header-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Feature Box Styling */
+  .feature-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #3b83fa;
+    color: white;
+    cursor: pointer;
+  }
+  .feature-box h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .feature-box p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .feature-box:hover p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .consultant-header {
+      height: 50vh;
+    }
+    
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .header-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .consultant-header {
+      height: 40vh;
+    }
+    
+    .header-content h1 {
+      font-size: 2rem;
+    }
+    
+    .header-content p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .alignbtn{
+      margin-left: 70px;
+    }
+  }
+  @media (min-width: 321px) and (max-width: 424px) {
+    .alignbtn{
+      margin-left: 85px;
+    }
+  }
+  
+  @media (min-width: 425px) and (max-width: 767px) {
+    .alignbtn{
+      margin-left: 125px;
+    }
+  }
+  

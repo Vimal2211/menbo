@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-menu">
+        <a (click)="openHome()" style="cursor: pointer;"><img src="../assets/menbo001.png" alt="About Us" class="img-fluid" style="width: 150px; margin-left: 8px;"></a>
+        <!-- <a class="navbar-brand" href="#">Menbo Technology</a> -->
+        <button (click)="toggle()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            [attr.aria-expanded]="isOpened" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" [class.show]="isOpened" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " [ngClass]="{'active': selectedColor === 'home'}"
+                            (click)="selectLink('home')" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " [ngClass]="{'active': selectedColor === 'services'}"
+                            (click)="selectLink('services')" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'about'}"
+                            (click)="selectLink('about')" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'testimonial'}"
+                            (click)="selectLink('testimonial')" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'contact'}"
+                            (click)="selectLink('contact')" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+</nav>
