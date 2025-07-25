@@ -212,14 +212,4 @@ export class DashboardComponent {
       }
     });
   }
-  isLargeScreen: boolean = false;
-  @HostListener('window:resize', [])
-  onResize(): void {
-    this.updateScreenSize(); // Update on resize
-  }
-
-  updateScreenSize(): void {
-    this.isLargeScreen = window.innerWidth >= 1024; // Adjust the breakpoint as needed
-    console.log('this.isLargeScreen: ', this.isLargeScreen);
-  }
 }
