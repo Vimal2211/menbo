@@ -23,6 +23,10 @@
                             (click)="selectLink('about')" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'team'}"
+                            (click)="selectLink('team')" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" [ngClass]="{'active': selectedColor === 'testimonial'}"
                             (click)="selectLink('testimonial')" href="#testimonials">Testimonials</a>
                     </li>

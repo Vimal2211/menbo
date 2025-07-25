@@ -64,8 +64,12 @@ export class DashboardComponent {
   }
 
   openMapwithMarker(): void {
+
     const mapUrl =
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.1352295177226!2d80.1538678736714!3d12.96582421500772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f609cb29add%3A0xbc33f21aaa5746b6!2sPallava%20Enclave%20Appartments.!5e1!3m2!1sen!2sin!4v1732377792919!5m2!1sen!2sin';
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.15965385287!2d79.6176173211203!3d13.047524487802852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1753465640609!5m2!1sen!2sin';
+
+    // const mapUrl =
+    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.1352295177226!2d80.1538678736714!3d12.96582421500772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f609cb29add%3A0xbc33f21aaa5746b6!2sPallava%20Enclave%20Appartments.!5e1!3m2!1sen!2sin!4v1732377792919!5m2!1sen!2sin';
     window.open(mapUrl, '_blank');
   }
   selectLink = (link: any) => {
@@ -105,7 +109,7 @@ export class DashboardComponent {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });
-    },1500); // Simulated delay; adjust as needed
+    }, 1500); // Simulated delay; adjust as needed
     // this.router.navigate(['/it-consultant']);
   }
   isLoading: boolean = false;
@@ -118,7 +122,7 @@ export class DashboardComponent {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });
-    },1500); // Simulated delay; adjust as needed
+    }, 1500); // Simulated delay; adjust as needed
     // this.router.navigate(['/web-development']);
 
   }
@@ -130,7 +134,7 @@ export class DashboardComponent {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });
-    },1500); // Simulated delay; adjust as needed
+    }, 1500); // Simulated delay; adjust as needed
     // this.router.navigate(['/it-consultant']);
   }
 
@@ -142,7 +146,7 @@ export class DashboardComponent {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });
-    },1500); // Simulated delay; adjust as needed
+    }, 1500); // Simulated delay; adjust as needed
     // this.router.navigate(['/it-consultant']);
   }
 
@@ -154,7 +158,7 @@ export class DashboardComponent {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });
-    },1500); // Simulated delay; adjust as needed
+    }, 1500); // Simulated delay; adjust as needed
     // this.router.navigate(['/it-consultant']);
   }
 
@@ -207,5 +211,15 @@ export class DashboardComponent {
         }
       }
     });
+  }
+  isLargeScreen: boolean = false;
+  @HostListener('window:resize', [])
+  onResize(): void {
+    this.updateScreenSize(); // Update on resize
+  }
+
+  updateScreenSize(): void {
+    this.isLargeScreen = window.innerWidth >= 1024; // Adjust the breakpoint as needed
+    console.log('this.isLargeScreen: ', this.isLargeScreen);
   }
 }

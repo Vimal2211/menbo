@@ -48,7 +48,8 @@
   </header>
 
   <!-- Carousel Section -->
-  <section id="carouselSection" class="lg:py-5"> <!--py-3-->
+   <!--py-3-->
+  <!-- <section id="carouselSection" class="lg:py-5"> 
     <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -114,7 +115,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </section>
+  </section> -->
 
   <!-- <section id="carouselSection" class="py-3">
         <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
@@ -326,6 +327,161 @@
       <!-- <p class="text-center">Menbo Technologies is a leading provider of software development services, dedicated to
           delivering innovative and tailored solutions to our clients. Our experienced team is committed to helping you
           achieve your business goals through technology.</p> -->
+    </div>
+  </section>
+
+  <section id="team" class="bg-light py-3">
+    <!-- Meet the Team -->
+    <div class="meet-the-team mb-5">
+      <h3 *ngIf="isLargeScreen" class="text-center mb-4" data-aos="fade-down">Meet Our Team</h3>
+      <h3 *ngIf="!isLargeScreen" class="text-center mb-4">Meet Our Team</h3>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_2.jpeg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+            <h5>Karthik</h5>
+            <p class="text-muted">Mobile App Developer</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_2.jpeg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+            <h5>Karthik</h5>
+            <p class="text-muted">Mobile App Developer</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+         <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_4.jpg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+            <h5>Gopi</h5>
+            <p class="text-muted">Digital Marketing Manager</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_4.jpg" alt="Team Member 2" class="rounded-circle mb-3 team-img">
+            <h5>Gopi</h5>
+            <p class="text-muted">Digital Marketing Manager</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-behance fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_1.jpeg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+            <h5>Sudhan J</h5>
+            <p class="text-muted">UI/UX Designer</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-dribbble fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_1.jpeg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+            <h5>Sudhan J</h5>
+            <p class="text-muted">UI/UX Designer</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_3.jpeg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+            <h5>Gokul</h5>
+            <p class="text-muted">SEO Specialist</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_3.jpeg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+            <h5>Gokul</h5>
+            <p class="text-muted">SEO Specialist</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_5.jpg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+            <h5>Santhosh</h5>
+            <p class="text-muted">IT Consultant</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+              <!-- <a href="#" class="text-muted"><i class="fab fa-dribbble fa-lg"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_5.jpg" alt="Team Member 1" class="rounded-circle mb-3 team-img">
+            <h5>Santhosh</h5>
+            <p class="text-muted">IT Consultant</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 6 -->
+        <div *ngIf="isLargeScreen" class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_6.jpg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+            <h5>Vimal</h5>
+            <p class="text-muted">Full Stack Developer</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!isLargeScreen" class="col-md-4">
+          <div class="team-member text-center">
+            <img src="../../assets/profile/Designer_6.jpg" alt="Team Member 3" class="rounded-circle mb-3 team-img">
+            <h5>Vimal</h5>
+            <p class="text-muted">Full Stack Developer</p>
+            <div class="social-icons" style="margin-bottom: 30px;">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
     </div>
   </section>
 
