@@ -9,7 +9,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
   templateUrl: './it-consultant.component.html',
   styleUrl: './it-consultant.component.css'
 })
-export class ItConsultantComponent {
+export class ITConsultantComponent {
   isLargeScreen: boolean = false;
   constructor(private router: Router) { }
 

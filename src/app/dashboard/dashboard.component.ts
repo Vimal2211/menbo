@@ -146,6 +146,18 @@ export class DashboardComponent {
     // this.router.navigate(['/it-consultant']);
   }
 
+  openITConsultant() {
+    this.isLoading = true; // Show loader
+    document.body.style.overflow = 'hidden'; // Disable scrolling
+    setTimeout(() => {
+      this.router.navigate(['/IT-consultant']).then(() => {
+        this.isLoading = false; // Hide loader after navigation
+        document.body.style.overflow = ''; // Re-enable scrolling
+      });
+    },1500); // Simulated delay; adjust as needed
+    // this.router.navigate(['/it-consultant']);
+  }
+
   openabout() {
     this.router.navigate(['/about']);
   }

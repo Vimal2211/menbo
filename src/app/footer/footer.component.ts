@@ -45,7 +45,7 @@ export class FooterComponent {
     this.isLoading = true; // Show loader
     document.body.style.overflow = 'hidden'; // Disable scrolling
     setTimeout(() => {
-      this.router.navigate(['/it-consultant']).then(() => {
+      this.router.navigate(['/IT-consultant']).then(() => {
         this.isLoading = false; // Hide loader after navigation
         document.body.style.overflow = ''; // Re-enable scrolling
       });

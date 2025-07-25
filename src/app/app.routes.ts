@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ItConsultantComponent } from './it-consultant/it-consultant.component';
+import { ITConsultantComponent } from './it-consultant/it-consultant.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { AboutComponent } from './about/about.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
@@ -31,8 +31,8 @@ export const routes: Routes = [
     component: DashboardComponent,
   },
   {
-    path: 'it-consultant',
-    component: ItConsultantComponent,
+    path: 'IT-consultant',
+    component: ITConsultantComponent,
   },
   {
     path: 'web-development',
