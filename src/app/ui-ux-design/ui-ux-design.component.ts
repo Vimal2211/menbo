@@ -3,7 +3,7 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NavigationEnd, Router } from '@angular/router';
-
+import AOS from 'aos';
 interface PortfolioItem {
   id: number;
   category: string;
@@ -43,24 +43,31 @@ export class UiUxDesignComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.updateScreenSize();
+    AOS.init({
+      duration: 800, // animation duration in ms
+      once: true     // whether animation should happen only once - while scrolling down
+    });
+      window.scrollTo(0, 0);
+
+    // this.updateScreenSize();
     this.filteredPortfolioItems = this.portfolioItems;
     this.router.events.subscribe((event) => {
       if (!(event instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
+       AOS.refresh(); // Refresh AOS after navigation to re-apply animations
     });
   }
 
-  @HostListener('window:resize', [])
-  onResize(): void {
-    this.updateScreenSize(); // Update on resize
-  }
+  // @HostListener('window:resize', [])
+  // onResize(): void {
+  //   this.updateScreenSize(); // Update on resize
+  // }
 
-  updateScreenSize(): void {
-    this.isLargeScreen = window.innerWidth >= 1024; // Adjust the breakpoint as needed
-  }
+  // updateScreenSize(): void {
+  //   this.isLargeScreen = window.innerWidth >= 1024; // Adjust the breakpoint as needed
+  // }
 
   open(){
     this.router.navigate(['/dashboard'], { fragment: 'contact' });

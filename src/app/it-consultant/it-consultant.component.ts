@@ -19,6 +19,7 @@ export class ITConsultantComponent {
       duration: 800, // animation duration in ms
       //once: true     // whether animation should happen only once - while scrolling down
     });
+    window.scrollTo(0, 0);
     // this.updateScreenSize();
     this.router.events.subscribe((event) => {
       if (!(event instanceof NavigationEnd)) {
