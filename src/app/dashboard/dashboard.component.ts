@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import * as AOS from 'aos';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,6 +27,11 @@ export class DashboardComponent {
     private route: ActivatedRoute,
     private fb: FormBuilder
   ) {
+    this.router.events.subscribe((event) => {
+    if (event instanceof NavigationEnd) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
@@ -212,4 +217,8 @@ export class DashboardComponent {
       }
     });
   }
+  openHome(){
+    this.router.navigate(['']);
+  }
+
 }
