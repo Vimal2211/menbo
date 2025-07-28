@@ -27,11 +27,11 @@ export class DashboardComponent {
     private route: ActivatedRoute,
     private fb: FormBuilder
   ) {
-  //   this.router.events.subscribe((event) => {
-  //   if (event instanceof NavigationEnd) {
-  //     window.scrollTo({ top: 0, behavior: 'smooth' });
-  //   }
-  // });
+    //   this.router.events.subscribe((event) => {
+    //   if (event instanceof NavigationEnd) {
+    //     window.scrollTo({ top: 0, behavior: 'smooth' });
+    //   }
+    // });
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
@@ -217,8 +217,10 @@ export class DashboardComponent {
       }
     });
   }
-  openHome(){
+  openHome() {
+    this.selectLink('home');
     this.router.navigate(['']);
+    window.scrollTo(0, 0);
   }
 
 }

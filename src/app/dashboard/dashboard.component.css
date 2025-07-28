@@ -615,6 +615,10 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.list-inline-item {
+  margin-right: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .loader {

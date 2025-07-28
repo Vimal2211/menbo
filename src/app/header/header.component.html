@@ -23,13 +23,18 @@
                             (click)="selectLink('about')" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'OurValue'}"
+                            (click)="selectLink('OurValue')" href="#testimonials">Our Value</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'technologies'}"
+                            (click)="selectLink('technologies')" href="#technologies">Tech Stack </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" [ngClass]="{'active': selectedColor === 'team'}"
                             (click)="selectLink('team')" href="#team">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [ngClass]="{'active': selectedColor === 'testimonial'}"
-                            (click)="selectLink('testimonial')" href="#testimonials">Testimonials</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" [ngClass]="{'active': selectedColor === 'contact'}"
                             (click)="selectLink('contact')" href="#contact">Contact</a>

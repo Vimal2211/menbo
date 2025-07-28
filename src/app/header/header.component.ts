@@ -33,6 +33,7 @@ export class HeaderComponent {
   }
 
   openHome(){
+    this.selectedColor = 'home';
     this.router.navigate(['']);
   }
 }
