@@ -17,8 +17,16 @@ export class HeaderComponent {
     this.selectedColor = link;
     this.isOpened = false
 
+    // Scroll to the section after DOM updates
+    // setTimeout(() => {
+    //   const element = document.getElementById(link);
+    //   if (element) {
+    //     element.scrollIntoView({ behavior: 'smooth'});
+    //   }
+    // }, 0);
+
   }
-  constructor(private router : Router){}
+  constructor(private router: Router) { }
   toggle() {
     this.isOpened = !this.isOpened;
     console.log(' this.isOpened: ', this.isOpened);
@@ -27,5 +35,4 @@ export class HeaderComponent {
   openHome(){
     this.router.navigate(['']);
   }
-
 }
