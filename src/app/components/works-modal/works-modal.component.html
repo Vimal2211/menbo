@@ -1,0 +1,60 @@
+<div class="wd-overlay" [ngClass]="{'open': !!selectedWork}" (click)="closeModal()"></div>
+
+<div class="wd-drawer" [ngClass]="{'open': !!selectedWork}" role="dialog" aria-modal="true">
+  <div class="wd-drawer-hero" *ngIf="selectedWork">
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+
+    <img *ngIf="selectedWork.image; else workDrawerFallback" [src]="selectedWork.image" [alt]="selectedWork.title" />
+    <ng-template #workDrawerFallback>
+      <div class="work-drawer-fallback"></div>
+    </ng-template>
+    <div class="wd-drawer-overlay"></div>
+    <div class="wd-drawer-hero-content">
+      <div class="wd-eyebrow">{{ selectedWork.category }}</div>
+      <h2>{{ selectedWork.title }}</h2>
+      <p>{{ selectedWork.result }}</p>
+    </div>
+  </div>
+
+  <div class="wd-drawer-body" *ngIf="selectedWork">
+    <p class="wd-intro">{{ selectedWork.description }}</p>
+
+    <div class="wd-metrics">
+      <div class="wd-metric" *ngFor="let metric of selectedWork.metrics">
+        <span>{{ metric.label }}</span>
+        <strong>{{ metric.value }}</strong>
+      </div>
+    </div>
+
+    <div class="wd-content-grid">
+      <div class="wd-panel">
+        <h3>Challenge</h3>
+        <p>{{ selectedWork.challenge }}</p>
+      </div>
+      <div class="wd-panel">
+        <h3>Approach</h3>
+        <p>{{ selectedWork.approach }}</p>
+      </div>
+      <div class="wd-panel wide">
+        <h3>Outcome</h3>
+        <p>{{ selectedWork.outcome }}</p>
+      </div>
+    </div>
+
+    <div class="wd-highlights">
+      <h3>Highlights</h3>
+      <div class="wd-highlight-list">
+        <span *ngFor="let item of selectedWork.highlights">{{ item }}</span>
+      </div>
+    </div>
+
+    <div class="wd-tags">
+      <span *ngFor="let tag of selectedWork.tags">{{ tag }}</span>
+    </div>
+
+    <!-- <div class="wd-cta-row">
+      <button class="wd-secondary" type="button" (click)="closeModal()">Close</button>
+      <a href="#contact" class="wd-primary" (click)="scrollToContact()">Start a similar project</a>
+    </div> -->
+  </div>
+</div>

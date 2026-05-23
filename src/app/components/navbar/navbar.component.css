@@ -98,11 +98,13 @@ nav.scrolled .logo-img {
   transition: width 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--ink);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
 }
 
@@ -118,8 +120,10 @@ nav.scrolled .logo-img {
   display: none !important;
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-nav.active {
   background: var(--accent) !important;
+  color: #fff !important;
 }
 
 .hamburger {
@@ -197,11 +201,13 @@ nav.scrolled .logo-img {
   border-top: none;
 }
 
-.mobile-menu a:hover {
+.mobile-menu a:hover,
+.mobile-menu a.active {
   color: var(--accent);
 }
 
-.mobile-menu a:last-child:hover {
+.mobile-menu a:last-child:hover,
+.mobile-menu a:last-child.active {
   background: var(--accent);
   color: #fff;
 }

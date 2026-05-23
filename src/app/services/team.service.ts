@@ -25,7 +25,8 @@ export class TeamService {
       icon: '⚡',
       description: 'The engine of Menbo Technologies — Vimal architects and builds full-stack solutions from robust backends to pixel-perfect frontends. His expertise spans modern JavaScript frameworks, cloud infrastructure, and scalable database design.',
       skills: ['React', 'Node.js', 'Angular', 'Firebase', 'Databases', 'REST APIs'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_6.jpg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_6.jpg',
+      image: 'assets/images/Menbo/profile_Images/Vimal.png',
       colorTheme: 'tc-orange',
       fallbackText: 'V',
       isLead: true
@@ -37,7 +38,8 @@ export class TeamService {
       icon: '📱',
       description: 'Crafts seamless iOS & Android experiences with clean architecture and intuitive UX that users love.',
       skills: ['iOS', 'Android', 'Firebase', 'React Native'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_2.jpeg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_2.jpeg',
+      image: 'assets/images/Menbo/profile_Images/Karthik.png',
       colorTheme: 'tc-orange',
       fallbackText: 'K'
     },
@@ -48,7 +50,8 @@ export class TeamService {
       icon: '📣',
       description: 'Drives brand growth through data-driven campaigns across social media, PPC, and content channels.',
       skills: ['Social Media', 'PPC', 'Analytics'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_4.jpg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_4.jpg',
+      image: 'assets/images/Menbo/profile_Images/Gopi.png',
       colorTheme: 'tc-gold',
       fallbackText: 'G'
     },
@@ -59,7 +62,8 @@ export class TeamService {
       icon: '🎨',
       description: 'Transforms complex ideas into intuitive, beautiful interfaces that delight users and convert visitors.',
       skills: ['Figma', 'Prototyping', 'Design Systems'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_1.jpeg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_1.jpeg',
+      image: 'assets/images/Menbo/profile_Images/Sudhan.png',
       colorTheme: 'tc-purple',
       fallbackText: 'SJ'
     },
@@ -70,7 +74,8 @@ export class TeamService {
       icon: '🔍',
       description: 'Boosts organic visibility with sharp keyword strategies, technical audits, and targeted link building.',
       skills: ['Technical SEO', 'Keywords', 'Link Building'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_3.jpeg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_3.jpeg',
+      image: 'assets/images/Menbo/profile_Images/Gokul.png',
       colorTheme: 'tc-green',
       fallbackText: 'G'
     },
@@ -81,7 +86,8 @@ export class TeamService {
       icon: '🏗️',
       description: 'Guides businesses with strategic IT advice — from cloud architecture to infrastructure modernization.',
       skills: ['Cloud', 'Architecture', 'Strategy'],
-      image: 'https://www.menbotechnologies.in/assets/profile/Designer_5.jpg',
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_5.jpg',
+      image: 'assets/images/Menbo/profile_Images/Surendar.png',
       colorTheme: 'tc-blue',
       fallbackText: 'S'
     }

@@ -19,42 +19,42 @@ export class ServicesComponent {
     {
       id: 'webDev',
       num: '01',
-      icon: '🌐',
+      icon: 'web',
       title: 'Web Development',
       description: 'Creating stunning and responsive websites using modern technologies — from landing pages to complex web applications.'
     },
     {
       id: 'mobile',
       num: '02',
-      icon: '📱',
+      icon: 'mobile',
       title: 'Mobile App Development',
       description: 'Building user-friendly mobile applications for iOS and Android — native performance with beautiful experiences.'
     },
     {
       id: 'uiux',
       num: '03',
-      icon: '🎨',
+      icon: 'design',
       title: 'UI/UX Design',
       description: 'Crafting intuitive and engaging user experiences with Figma — designs that convert visitors into customers.'
     },
     {
       id: 'dm',
       num: '04',
-      icon: '📣',
+      icon: 'marketing',
       title: 'Digital Marketing',
       description: 'Drive growth with expert strategies in social media, PPC, and content marketing — data-driven for maximum ROI.'
     },
     {
       id: 'seo',
       num: '05',
-      icon: '🔍',
+      icon: 'seo',
       title: 'SEO Optimization',
       description: 'Boost your website\'s visibility and rankings with expert SEO strategies tailored to your business goals.'
     },
     {
       id: 'it',
       num: '06',
-      icon: '🏗️',
+      icon: 'consulting',
       title: 'IT Consulting',
       description: 'Get expert guidance to streamline your IT infrastructure and digital operations for smarter business growth.'
     }

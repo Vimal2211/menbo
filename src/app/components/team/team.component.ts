@@ -15,6 +15,7 @@ export class TeamComponent implements OnInit {
   ngOnInit(): void {
     this.leadMember = this.teamService.getLead();
     this.otherMembers = this.teamService.getOtherMembers();
+    console.log('this.otherMembers: ', this.otherMembers);
   }
 
   getColorForTheme(theme: string): string {

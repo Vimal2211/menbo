@@ -1,4 +1,4 @@
-<div class="wd-overlay" [ngClass]="{'open': activeModal}" (click)="closeModal()"></div>
+<div class="wd-overlay" [ngClass]="{'open': isServiceModalOpen}" (click)="closeModal()"></div>
 
 <!-- WEB DEVELOPMENT MODAL -->
 <div class="wd-modal" [ngClass]="{'open': activeModal === 'webDev'}" role="dialog" aria-modal="true">
@@ -341,15 +341,15 @@
     <h3 class="wd-section-title">Meet Our Designers</h3>
     <div class="wd-testimonials">
       <div class="wd-testi wd-testi-row wd-testi-designer">
-        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_1.jpeg" alt="Sudhan J" onerror="this.style.display='none'">
+        <img class="wd-testi-row-avatar" src="assets/images/Menbo/profile_Images/Sudhan.png" alt="Sudhan J" onerror="this.style.display='none'">
         <div><div class="wd-testi-name">Sudhan J</div><div class="wd-testi-role">Senior UI/UX Designer</div><div class="wd-testi-quote">Leads end-to-end design strategy with expertise in user research and high-fidelity prototyping.</div></div>
       </div>
       <div class="wd-testi wd-testi-row wd-testi-designer">
-        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_2.jpeg" alt="Vignesh" onerror="this.style.display='none'">
+        <img class="wd-testi-row-avatar" src="assets/images/Menbo/profile_Images/Gopi.png" alt="Vignesh" onerror="this.style.display='none'">
         <div><div class="wd-testi-name">Vignesh</div><div class="wd-testi-role">UI/UX Designer</div><div class="wd-testi-quote">Specialises in mobile app UI and responsive web design with a keen eye for visual detail.</div></div>
       </div>
       <div class="wd-testi wd-testi-row wd-testi-designer">
-        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_3.jpeg" alt="Santhosh" onerror="this.style.display='none'">
+        <img class="wd-testi-row-avatar" src="assets/images/Menbo/profile_Images/Gokul.png" alt="Santhosh" onerror="this.style.display='none'">
         <div><div class="wd-testi-name">Santhosh</div><div class="wd-testi-role">Junior UI/UX Designer</div><div class="wd-testi-quote">Brings fresh creative energy to wireframing and usability testing across projects.</div></div>
       </div>
       <div class="wd-testi wd-testi-row wd-testi-designer">

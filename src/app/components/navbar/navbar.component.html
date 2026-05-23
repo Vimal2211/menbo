@@ -3,11 +3,12 @@
     <img src="../../../assets/images/Menbo/menbo002.png" alt="Menbo Technologies" class="logo-img">
   </a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#technologies">Tech Stack</a></li>
-    <li><a href="#team">Team</a></li>
-    <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+    <li><a href="#services" [class.active]="activeSection === 'services'">Services</a></li>
+    <li><a href="#about" [class.active]="activeSection === 'about'">About</a></li>
+    <li><a href="#works" [class.active]="activeSection === 'works'">Our Works</a></li>
+    <li><a href="#technologies" [class.active]="activeSection === 'technologies'">Tech Stack</a></li>
+    <li><a href="#team" [class.active]="activeSection === 'team'">Team</a></li>
+    <li><a href="#contact" class="btn-nav" [class.active]="activeSection === 'contact'">Contact Us</a></li>
   </ul>
   <button class="hamburger" [ngClass]="{'open': isHamburgerOpen}" (click)="toggleHamburger()" id="hamburger">
     <span></span><span></span><span></span>
@@ -15,9 +16,10 @@
 </nav>
 
 <div class="mobile-menu" [ngClass]="{'open': isHamburgerOpen}" id="mobileMenu">
-  <a href="#services" class="mm-link" (click)="closeMobileMenu()">Services</a>
-  <a href="#about" class="mm-link" (click)="closeMobileMenu()">About</a>
-  <a href="#technologies" class="mm-link" (click)="closeMobileMenu()">Tech Stack</a>
-  <a href="#team" class="mm-link" (click)="closeMobileMenu()">Team</a>
-  <a href="#contact" class="mm-link" (click)="closeMobileMenu()">Contact Us</a>
+  <a href="#services" class="mm-link" [class.active]="activeSection === 'services'" (click)="closeMobileMenu()">Services</a>
+  <a href="#about" class="mm-link" [class.active]="activeSection === 'about'" (click)="closeMobileMenu()">About</a>
+  <a href="#works" class="mm-link" [class.active]="activeSection === 'works'" (click)="closeMobileMenu()">Our Works</a>
+  <a href="#technologies" class="mm-link" [class.active]="activeSection === 'technologies'" (click)="closeMobileMenu()">Tech Stack</a>
+  <a href="#team" class="mm-link" [class.active]="activeSection === 'team'" (click)="closeMobileMenu()">Team</a>
+  <a href="#contact" class="mm-link" [class.active]="activeSection === 'contact'" (click)="closeMobileMenu()">Contact Us</a>
 </div>

@@ -8,7 +8,12 @@ import { ModalService } from '../../services/modal.service';
 })
 export class ServiceModalComponent implements OnInit {
   activeModal: string | null = null;
-  
+  private readonly serviceModalIds = ['webDev', 'mobile'];
+
+  get isServiceModalOpen(): boolean {
+    return !!this.activeModal && this.serviceModalIds.includes(this.activeModal);
+  }
+
   // Web Development content
   webDevIntro = 'At Menbo Technologies, we specialize in creating dynamic and responsive websites tailored to your business needs. We leverage the latest technologies to deliver websites that look stunning and perform seamlessly across all devices — whether you need a landing page, a corporate site, or a complex web application.';
   

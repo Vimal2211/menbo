@@ -18,6 +18,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServiceModalComponent } from './components/service-modal/service-modal.component';
 import { CursorComponent } from './components/cursor/cursor.component';
+import { WorksComponent } from './components/works/works.component';
+import { WorksModalComponent } from './components/works-modal/works-modal.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CursorComponent } from './components/cursor/cursor.component';
     ContactComponent,
     FooterComponent,
     ServiceModalComponent,
-    CursorComponent
+    CursorComponent,
+    WorksComponent,
+    WorksModalComponent
   ],
   imports: [
     BrowserModule,
