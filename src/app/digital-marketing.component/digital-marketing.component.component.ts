@@ -5,7 +5,7 @@ import AOS from 'aos';
 
 @Component({
   selector: 'app-digital-marketing.component',
-  standalone: true,
+  standalone: true, 
   imports: [RouterOutlet, CommonModule],
   templateUrl: './digital-marketing.component.component.html',
   styleUrl: './digital-marketing.component.component.css'
