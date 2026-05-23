@@ -1,0 +1,125 @@
+/* TECH */
+:host ::ng-deep #technologies {
+  background: var(--ink);
+}
+
+#technologies .section-title {
+  color: #fff;
+}
+
+#technologies .label {
+  color: var(--acc3);
+}
+
+#technologies .label::before {
+  background: var(--acc3);
+}
+
+#technologies .section-sub {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tech-marquee-outer {
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+
+.tech-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: max-content;
+  animation: mq-l 45s linear infinite;
+}
+
+.tech-row:nth-child(2) {
+  animation: mq-r 45s linear infinite;
+}
+
+@keyframes mq-l {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes mq-r {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  padding: 0.7rem 1.4rem;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.tech-pill:hover {
+  background: rgba(232, 66, 10, 0.12);
+  border-color: rgba(232, 66, 10, 0.3);
+  color: #fff;
+}
+
+section {
+  padding: 7rem 5%;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.2rem;
+}
+
+.label::before {
+  content: '';
+  width: 20px;
+  height: 1.5px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+}
+
+.section-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 540px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .tech-row {
+    animation-duration: 40s; /* ✅ slower = all items visible */
+  }
+}

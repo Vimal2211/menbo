@@ -1,0 +1,62 @@
+/* TICKER */
+:host ::ng-deep .ticker-wrap {
+  background: var(--ink);
+  overflow: hidden;
+  padding: 0.8rem 0;
+}
+
+.ticker-inner {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+  width: max-content;
+}
+
+.ticker-item {
+  color: var(--bg);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.ticker-item strong {
+  color: var(--acc3);
+  opacity: 1;
+  font-weight: 700;
+}
+
+.ticker-item::after {
+  content: '✦';
+  opacity: 0.4;
+  font-size: 0.5rem;
+  flex-shrink: 0;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* transform: translateX(-50%); */
+    transform: translateX(-33.33%);
+  }
+}
+
+/* Mobile View - Adjust animation for smaller screens */
+@media (max-width: 768px) {
+  .ticker-inner {
+    animation: ticker 35s linear infinite;
+  }
+
+  .ticker-item {
+    font-size: 0.75rem;
+    padding: 0 1.5rem;
+  }
+}
