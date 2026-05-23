@@ -13,7 +13,7 @@ import AOS from 'aos';
 export class DigitalMarketingComponentComponent {
 
   constructor(private router: Router) { }
-
+ 
   ngOnInit() {
     AOS.init({
       duration: 800, // animation duration in ms
@@ -31,6 +31,7 @@ export class DigitalMarketingComponentComponent {
 
   open() {
     this.router.navigate(['/dashboard'], { fragment: 'contact' });
+    
   }
 
 }
