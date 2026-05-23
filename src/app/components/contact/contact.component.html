@@ -1,0 +1,129 @@
+<section id="contact">
+  <div class="section-inner">
+    <div style="text-align: center; margin-bottom: 3.5rem">
+      <div class="label" style="justify-content: center">Get In Touch</div>
+      <h2 class="section-title">Let's Build Something<br>Great Together</h2>
+    </div>
+    <div class="contact-wrapper reveal">
+      <div class="contact-left">
+        <h3>Contact Information</h3>
+        <p>Reach out and we'll respond within 24 hours with a proposal tailored to your needs.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val"><a href="mailto:support@menbotechnologies.in">support@menbotechnologies.in</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-val"><a href="tel:+919841813134">+91 98418 13134</a> / <a href="tel:+919698982626">+91 96989 82626</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Address</div>
+              <div class="ci-val">Pallavaram, Chennai, Tamil Nadu</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">⏰</div>
+            <div>
+              <div class="ci-label">Working Hours</div>
+              <div class="ci-val">Mon – Sat, 9 AM – 7 PM IST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <h3>Send us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name <span style="color: red;">*</span></label>
+            <input 
+              type="text" 
+              placeholder="Your Name" 
+              [(ngModel)]="formData.name" 
+              name="name"
+              (blur)="onNameBlur()"
+              [ngClass]="{'input-error': isFieldInvalid('name')}">
+            <small *ngIf="isFieldInvalid('name')" style="color: red; display: block; margin-top: 0.3rem;">
+              {{ getFieldError('name') }}
+            </small>
+          </div>
+          <div class="form-group">
+            <label>Email Address <span style="color: red;">*</span></label>
+            <input 
+              type="email" 
+              placeholder="you@gmail.com" 
+              [(ngModel)]="formData.email" 
+              name="email"
+              (blur)="onEmailBlur()"
+              [ngClass]="{'input-error': isFieldInvalid('email')}">
+            <small *ngIf="isFieldInvalid('email')" style="color: red; display: block; margin-top: 0.3rem;">
+              {{ getFieldError('email') }}
+            </small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Required <span style="color: red;">*</span></label>
+          <select 
+            [(ngModel)]="formData.service" 
+            name="service" 
+            (change)="onServiceChange()"
+            [ngClass]="{'input-error': isFieldInvalid('service')}">
+            <option value="">Select a service...</option>
+            <option>Web Development</option>
+            <option>Mobile App Development</option>
+            <option>UI/UX Design</option>
+            <option>Digital Marketing</option>
+            <option>SEO Optimization</option>
+            <option>IT Consulting</option>
+            <option>Others</option>
+          </select>
+          <small *ngIf="isFieldInvalid('service')" style="color: red; display: block; margin-top: 0.3rem;">
+            {{ getFieldError('service') }}
+          </small>
+        </div>
+        <div class="form-group" *ngIf="formData.service === 'Others'">
+          <label>Please Specify <span style="color: red;">*</span></label>
+          <input 
+            type="text" 
+            placeholder="Enter your service requirement..." 
+            [(ngModel)]="formData.otherService" 
+            name="otherService" 
+            (input)="onOtherServiceInput()"
+            (blur)="markFieldTouched('otherService')"
+            [ngClass]="{'input-error': isFieldInvalid('otherService')}">
+          <small *ngIf="isFieldInvalid('otherService')" style="color: red; display: block; margin-top: 0.3rem;">
+            {{ getFieldError('otherService') }}
+          </small>
+        </div>
+        <div class="form-group">
+          <label>Message <span style="color: red;">*</span></label>
+          <textarea 
+            placeholder="Tell us about your project, timeline, and goals..." 
+            [(ngModel)]="formData.message" 
+            name="message"
+            (blur)="onMessageBlur()"
+            [ngClass]="{'input-error': isFieldInvalid('message')}"></textarea>
+          <small *ngIf="isFieldInvalid('message')" style="color: red; display: block; margin-top: 0.3rem;">
+            {{ getFieldError('message') }}
+          </small>
+        </div>
+        <div *ngIf="submitError" style="color: red; margin-bottom: 1rem; font-size: 0.9rem;">{{ submitError }}</div>
+        <button 
+          class="btn-submit" 
+          [ngClass]="{'success': submitSuccess}" 
+          (click)="onSubmit()"
+          [disabled]="!isFormValid() || isSubmitting">
+          {{ submitMessage }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="../../../assets/images/Menbo/menbo002_white.png" alt="Menbo Technologies" class="logo-img">
+        </div>
+        <p class="footer-tagline">Your trusted partner in innovative software development — web, mobile, design, and digital growth, all under one roof in Chennai.</p>
+        <div class="social-row">
+          <a [href]="link.href" class="soc-btn" *ngFor="let link of socialLinks" target="_blank" rel="noopener noreferrer" [title]="link.name">{{ link.icon }}</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li *ngFor="let service of services">
+            <a (click)="openServiceModal(service.modal)" style="cursor: pointer;">{{ service.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li *ngFor="let link of companyLinks"><a [href]="link.href">{{ link.name }}</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li *ngFor="let link of contactLinks"><a [href]="link.href">{{ link.value }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ currentYear }} Menbo Technologies. All Rights Reserved.</span>
+      <span><a (click)="openPolicy('privacy')" style="cursor: pointer;">Privacy Policy</a> · <a (click)="openPolicy('terms')" style="cursor: pointer;">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>

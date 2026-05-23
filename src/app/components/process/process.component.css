@@ -1,0 +1,151 @@
+/* PROCESS */
+:host ::ng-deep #process {
+  background: var(--bg2);
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.process-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.process-item:last-child {
+  border-bottom: none;
+}
+
+.process-item:hover {
+  background: rgba(232, 66, 10, 0.02);
+}
+
+.process-num {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(15, 14, 11, 0.06);
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.process-item:hover .process-num {
+  color: var(--accent);
+  opacity: 0.3;
+}
+
+.process-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.process-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 480px;
+}
+
+.process-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(232, 66, 10, 0.07);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+section {
+  padding: 7rem 5%;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.2rem;
+}
+
+.label::before {
+  content: '';
+  width: 20px;
+  height: 1.5px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+}
+
+.section-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 540px;
+  line-height: 1.8;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .process-item {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .process-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 5rem 5%;
+  }
+
+  .process-item {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.5rem;
+  }
+
+  .process-num {
+    font-size: 2rem;
+  }
+}

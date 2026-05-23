@@ -1,0 +1,24 @@
+<div class="hero-wrap" id="home">
+  <div class="hero">
+    <div>
+      <div class="hero-eyebrow"><div class="eyebrow-dot">✦</div>Based in Chennai, India</div>
+      <h1 class="hero-title">Your Partner in<br><em>Innovative</em><br>Software Dev.</h1>
+      <p class="hero-sub">Menbo Technologies delivers tailored web, mobile, and digital solutions that drive real growth — built with precision, launched with purpose.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Start a Project →</a>
+        <a href="#services" class="btn-ghost">Explore Services ↓</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-geo">
+        <div class="geo-bg"></div>
+        <div class="geo-center"><div class="geo-center-logo">MT</div><div class="geo-center-sub">Since 2019</div></div>
+        <div class="geo-card" *ngFor="let stat of stats" [ngClass]="stat.id">
+          <div class="gc-num">{{ stat.num }}</div>
+          <div class="gc-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</div>

@@ -1,0 +1,782 @@
+<div class="wd-overlay" [ngClass]="{'open': activeModal}" (click)="closeModal()"></div>
+
+<!-- WEB DEVELOPMENT MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'webDev'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/pictures/web1.jpg" alt="Web Development">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 01</div>
+      <h2 class="wd-modal-hero-title">Web Development</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">At Menbo Technologies, we specialize in creating dynamic and responsive websites tailored to your business needs. We leverage the latest technologies to deliver websites that look stunning and perform seamlessly across all devices — whether you need a landing page, a corporate site, or a complex web application.</p>
+    
+    <h3 class="wd-section-title">What We Offer</h3>
+    <div class="wd-features">
+      <div class="wd-feat">               
+        <div class="wd-feat-icon">🛠️</div>               
+        <div class="wd-feat-title">Custom Web Development</div>
+        <div class="wd-feat-desc">Tailor-made websites built to your exact requirements — functional, scalable, and future-proof.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📱</div>
+        <div class="wd-feat-title">Responsive Design</div>
+        <div class="wd-feat-desc">Pixel-perfect layouts that deliver an optimal experience on every screen size and device.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔒</div>
+        <div class="wd-feat-title">Security & Maintenance</div>
+        <div class="wd-feat-desc">Robust security measures and ongoing maintenance to keep your site safe and always up to date.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our Development Process</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num">1</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Discovery</div>
+          <div class="wd-step-desc">Understanding your business goals, audience, and project requirements to lay a solid strategic foundation.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num">2</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Design</div>
+          <div class="wd-step-desc">Crafting intuitive and visually compelling designs that align with your brand identity and user expectations.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num">3</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Development</div>
+          <div class="wd-step-desc">Building robust, scalable web applications using modern frameworks — Angular, React, Node.js, and more.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num">4</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Deployment</div>
+          <div class="wd-step-desc">Smooth launch to a live environment with performance tuning, SEO setup, and post-launch monitoring.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Technologies We Use</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">🟠 HTML5</span>
+      <span class="wd-tech-pill">🔵 CSS3</span>
+      <span class="wd-tech-pill">🟡 JavaScript</span>
+      <span class="wd-tech-pill">🔴 Angular</span>
+      <span class="wd-tech-pill">🩵 React</span>
+      <span class="wd-tech-pill">🟢 Node.js</span>
+      <span class="wd-tech-pill">🅱️ Bootstrap</span>
+      <span class="wd-tech-pill">💅 Sass</span>
+      <span class="wd-tech-pill">🗄️ Databases</span>
+      <span class="wd-tech-pill">🔥 Firebase</span>
+      <span class="wd-tech-pill">🖼️ Figma</span>
+      <span class="wd-tech-pill">☁️ Cloud</span>
+    </div>
+
+    <h3 class="wd-section-title">Our Portfolio</h3>
+    <div class="wd-portfolio">
+      <div class="wd-proj">
+        <div class="wd-proj-img">
+          <img src="https://www.menbotechnologies.in/assets/pictures/portfolio_3.jpg" alt="Project One">
+        </div>
+        <div class="wd-proj-body">
+          <div class="wd-proj-title">Project One</div>
+          <div class="wd-proj-sub">Interactive Web Application · Angular, D3.js, Node.js</div>
+        </div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img">
+          <img src="https://www.menbotechnologies.in/assets/pictures/portfolio2.jpg" alt="Project Two">
+        </div>
+        <div class="wd-proj-body">
+          <div class="wd-proj-title">Project Two</div>
+          <div class="wd-proj-sub">Custom CMS · Angular, Node.js, SQL</div>
+        </div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img">
+          <img src="https://www.menbotechnologies.in/assets/pictures/portfolio1.jpg" alt="Project Three">
+        </div>
+        <div class="wd-proj-body">
+          <div class="wd-proj-title">Project Three</div>
+          <div class="wd-proj-sub">E-commerce Platform · Angular, Node.js, MongoDB</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">What Our Clients Say</h3>
+    <div class="wd-testimonials">
+      <div class="wd-testi">
+        <p class="wd-testi-quote">"Menbo Technologies transformed our outdated website into a modern, responsive platform that significantly increased our user engagement and sales."</p>
+        <div class="wd-testi-author">
+          <img class="wd-testi-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_1.jpeg" alt="Jane Doe">
+          <div><div class="wd-testi-name">Jane Doe</div><div class="wd-testi-role">CEO, TechCorp</div></div>
+        </div>
+      </div>
+      <div class="wd-testi">
+        <p class="wd-testi-quote">"The team delivered a custom web application that perfectly fits our business needs. Their attention to detail and dedication to quality are unmatched."</p>
+        <div class="wd-testi-author">
+          <img class="wd-testi-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_2.jpeg" alt="John Smith">
+          <div><div class="wd-testi-name">John Smith</div><div class="wd-testi-role">Marketing Manager, MarketGuru</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wd-cta">
+      <h3>Ready to Build Your Web Presence?</h3>
+      <p>Let's discuss your project and create something exceptional together.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Start Your Project →</a>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE APP DEVELOPMENT MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'mobile'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/pictures/mobile.jpeg" alt="Mobile App Development">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 02</div>
+      <h2 class="wd-modal-hero-title">Mobile App Development</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">At Menbo Technologies, we specialize in creating high-performance mobile applications tailored to your business needs. Our experienced developers use the latest technologies to ensure your app is scalable, secure, and user-friendly — reaching users on both iOS and Android.</p>
+
+    <h3 class="wd-section-title">Why Choose Us</h3>
+    <div class="wd-features">
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔀</div>
+        <div class="wd-feat-title">Cross-Platform Development</div>
+        <div class="wd-feat-desc">Reach a wider audience with apps that work seamlessly on both iOS and Android from a single codebase.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🎯</div>
+        <div class="wd-feat-title">Custom Solutions</div>
+        <div class="wd-feat-desc">Apps tailored to your specific business goals — not off-the-shelf, but built from scratch for you.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🛡️</div>
+        <div class="wd-feat-title">Maintenance & Support</div>
+        <div class="wd-feat-desc">Ongoing support to keep your app secure, up-to-date, and performing at its best post-launch.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Key App Features</h3>
+    <div class="wd-features">
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📐</div>
+        <div class="wd-feat-title">Responsive Design</div>
+        <div class="wd-feat-desc">Apps that adapt seamlessly to different screen sizes and orientations for a consistent experience.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔐</div>
+        <div class="wd-feat-title">Security First</div>
+        <div class="wd-feat-desc">Robust security measures to protect your data and ensure the safety of every user.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">☁️</div>
+        <div class="wd-feat-title">Cloud Integration</div>
+        <div class="wd-feat-desc">Seamless integration with cloud services for scalability and flexibility as your user base grows.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our Development Process</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num">1</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Discovery & Planning</div>
+          <div class="wd-step-desc">We understand your business needs and define the project scope, features, and architecture.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num">2</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Development</div>
+          <div class="wd-step-desc">Our developers bring your app to life with clean, efficient code using modern mobile frameworks.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num">3</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Testing & Deployment</div>
+          <div class="wd-step-desc">Rigorous QA across devices ensures your app meets all quality standards before going live.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Technologies We Use</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">⚛️ React Native</span>
+      <span class="wd-tech-pill">🤖 Android</span>
+      <span class="wd-tech-pill">🍎 iOS</span>
+      <span class="wd-tech-pill">☕ Java</span>
+      <span class="wd-tech-pill">🟢 Node.js</span>
+      <span class="wd-tech-pill">☁️ Cloud Integration</span>
+      <span class="wd-tech-pill">🔥 Firebase</span>
+      <span class="wd-tech-pill">🖼️ Figma</span>
+    </div>
+
+    <h3 class="wd-section-title">Success Stories</h3>
+    <div class="wd-portfolio wd-portfolio-3">
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/ecom.jpg" alt="E-Commerce App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">E-Commerce App</div><div class="wd-proj-sub">+30% sales in first quarter</div></div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/health.jpeg" alt="Healthcare App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">Healthcare Management</div><div class="wd-proj-sub">40% reduction in admin tasks</div></div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/finance.jpg" alt="Finance App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">Finance Tracker</div><div class="wd-proj-sub">25% increase in user savings</div></div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/travel.jpg" alt="Travel App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">Travel Booking App</div><div class="wd-proj-sub">50% increase in engagement</div></div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/fitness.jpg" alt="Fitness App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">Fitness Tracker</div><div class="wd-proj-sub">100K+ active users in 6 months</div></div>
+      </div>
+      <div class="wd-proj">
+        <div class="wd-proj-img"><img src="https://www.menbotechnologies.in/assets/service/realestate.jpg" alt="Real Estate App"></div>
+        <div class="wd-proj-body"><div class="wd-proj-title">Real Estate App</div><div class="wd-proj-sub">60% increase in inquiries</div></div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Industries We Serve</h3>
+    <div class="wd-features">
+      <div class="wd-feat"><div class="wd-feat-icon">🛍️</div><div class="wd-feat-title">Retail</div><div class="wd-feat-desc">Intuitive e-commerce and retail mobile platforms that enhance the shopping experience.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🏥</div><div class="wd-feat-title">Healthcare</div><div class="wd-feat-desc">Secure healthcare management apps to improve patient care and administration efficiency.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🎓</div><div class="wd-feat-title">Education</div><div class="wd-feat-desc">Engaging educational apps that facilitate interactive learning and remote education.</div></div>
+    </div>
+
+    <h3 class="wd-section-title">Frequently Asked Questions</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">Q</div>
+        <div class="wd-step-body"><div class="wd-step-name">What platforms do you develop for?</div><div class="wd-step-desc">We develop for both iOS and Android using cross-platform technologies like React Native and Flutter for maximum reach.</div></div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">Q</div>
+        <div class="wd-step-body"><div class="wd-step-name">How long does development take?</div><div class="wd-step-desc">On average, 3–6 months from initial planning to deployment, depending on complexity and features.</div></div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">Q</div>
+        <div class="wd-step-body"><div class="wd-step-name">Do you provide post-launch support?</div><div class="wd-step-desc">Yes — we offer comprehensive maintenance and support to keep your app secure and performing optimally after launch.</div></div>
+      </div>
+    </div>
+
+    <div class="wd-cta">
+      <h3>Transform Your Ideas into an App</h3>
+      <p>Contact us today to start your mobile development journey.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Get in Touch →</a>
+    </div>
+  </div>
+</div>
+
+<!-- UI/UX DESIGN MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'uiux'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/service/ui_ux.jpg" alt="UI/UX Design">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 03</div>
+      <h2 class="wd-modal-hero-title">UI/UX Design</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">At Menbo Technologies, our UI/UX Design services are dedicated to creating user-centric and visually appealing interfaces that enhance satisfaction and engagement. We focus on understanding your users' needs and behaviors to deliver seamless, intuitive experiences across all platforms.</p>
+
+    <h3 class="wd-section-title">What We Offer</h3>
+    <div class="wd-features">
+      <div class="wd-feat"><div class="wd-feat-icon">🔬</div><div class="wd-feat-title">User Research & Analysis</div><div class="wd-feat-desc">Deep research into user behaviour to ensure every design decision is backed by real data and insights.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🗂️</div><div class="wd-feat-title">Wireframing & Prototyping</div><div class="wd-feat-desc">Interactive prototypes that validate ideas early, saving time and cost before any development begins.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🎨</div><div class="wd-feat-title">Visual Design & Branding</div><div class="wd-feat-desc">Polished, on-brand visual designs that communicate your identity and delight your users.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🧪</div><div class="wd-feat-title">Usability Testing</div><div class="wd-feat-desc">Real-user testing sessions that surface friction points and validate design decisions before launch.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📱</div><div class="wd-feat-title">Responsive & Adaptive Design</div><div class="wd-feat-desc">Layouts that look and work perfectly across desktop, tablet, and mobile without compromise.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🤝</div><div class="wd-feat-title">Handoff to Dev</div><div class="wd-feat-desc">Developer-ready Figma files with specifications, assets, and design tokens for smooth implementation.</div></div>
+    </div>
+
+    <h3 class="wd-section-title">Our Design Philosophy</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#8b5cf6">❤️</div>
+        <div class="wd-step-body"><div class="wd-step-name">Empathy</div><div class="wd-step-desc">We deeply understand user needs and emotions to create designs that feel natural and relatable.</div></div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#8b5cf6">💡</div>
+        <div class="wd-step-body"><div class="wd-step-name">Innovation</div><div class="wd-step-desc">We leverage the latest design trends and tools to stay ahead and deliver fresh, modern experiences.</div></div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#8b5cf6">⚙️</div>
+        <div class="wd-step-body"><div class="wd-step-name">Functionality</div><div class="wd-step-desc">Great design is not just beautiful — it's purposeful. Every element serves a clear functional goal.</div></div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Tools We Use</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">🖼️ Figma</span>
+      <span class="wd-tech-pill">✏️ Adobe XD</span>
+      <span class="wd-tech-pill">🖌️ Illustrator</span>
+      <span class="wd-tech-pill">🖼️ Photoshop</span>
+      <span class="wd-tech-pill">📐 Sketch</span>
+      <span class="wd-tech-pill">🎬 Principle</span>
+      <span class="wd-tech-pill">🧩 Zeplin</span>
+      <span class="wd-tech-pill">📊 Maze (Testing)</span>
+    </div>
+
+    <h3 class="wd-section-title">Meet Our Designers</h3>
+    <div class="wd-testimonials">
+      <div class="wd-testi wd-testi-row wd-testi-designer">
+        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_1.jpeg" alt="Sudhan J" onerror="this.style.display='none'">
+        <div><div class="wd-testi-name">Sudhan J</div><div class="wd-testi-role">Senior UI/UX Designer</div><div class="wd-testi-quote">Leads end-to-end design strategy with expertise in user research and high-fidelity prototyping.</div></div>
+      </div>
+      <div class="wd-testi wd-testi-row wd-testi-designer">
+        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_2.jpeg" alt="Vignesh" onerror="this.style.display='none'">
+        <div><div class="wd-testi-name">Vignesh</div><div class="wd-testi-role">UI/UX Designer</div><div class="wd-testi-quote">Specialises in mobile app UI and responsive web design with a keen eye for visual detail.</div></div>
+      </div>
+      <div class="wd-testi wd-testi-row wd-testi-designer">
+        <img class="wd-testi-row-avatar" src="https://www.menbotechnologies.in/assets/profile/Designer_3.jpeg" alt="Santhosh" onerror="this.style.display='none'">
+        <div><div class="wd-testi-name">Santhosh</div><div class="wd-testi-role">Junior UI/UX Designer</div><div class="wd-testi-quote">Brings fresh creative energy to wireframing and usability testing across projects.</div></div>
+      </div>
+      <div class="wd-testi wd-testi-row wd-testi-designer">
+        <div class="wd-testi-row-avatar" style="background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:1.5rem">🧩</div>
+        <div><div class="wd-testi-name">Our Process</div><div class="wd-testi-role">Collaborative by Design</div><div class="wd-testi-quote">We work closely with your team throughout, ensuring every iteration aligns with your vision.</div></div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Client Success Stories</h3>
+    <div class="wd-features wd-features-2">
+      <div class="wd-feat"><div class="wd-feat-icon">📈</div><div class="wd-feat-title">Enhanced User Engagement</div><div class="wd-feat-desc">Redesigned e-commerce platform UI — 50% increase in engagement and 30% boost in sales within 6 months.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📱</div><div class="wd-feat-title">Improved Mobile Usability</div><div class="wd-feat-desc">UX improvements on a mobile app led to 40% higher retention and 25% rise in positive reviews.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🚀</div><div class="wd-feat-title">Streamlined Onboarding</div><div class="wd-feat-desc">Revamped SaaS onboarding — 35% lower drop-off rates and 20% increase in conversions.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🌐</div><div class="wd-feat-title">Redesigned Corporate Site</div><div class="wd-feat-desc">Corporate website redesign drove 60% more traffic and 45% growth in lead generation.</div></div>
+    </div>
+
+    <div class="wd-cta" style="background:linear-gradient(135deg,#1a0a28,#2a1040)">
+      <h3>Let's Design Something Remarkable</h3>
+      <p>Tell us about your project and we'll craft an experience your users will love.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Start Your Project →</a>
+    </div>
+  </div>
+</div>
+
+<!-- DIGITAL MARKETING MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'dm'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/pictures/portfolio_3.jpg" alt="Digital Marketing">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 04</div>
+      <h2 class="wd-modal-hero-title">Digital Marketing</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">Our Digital Marketing solutions are crafted to help your business thrive in a competitive online world. From SEO to social media, we create data-driven strategies that deliver real, measurable results — maximising your ROI and growing your brand presence at every touchpoint.</p>
+
+    <h3 class="wd-section-title">Core Services</h3>
+    <div class="wd-features">
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔎</div>
+        <div class="wd-feat-title">Search Engine Optimisation</div>
+        <div class="wd-feat-desc">Improve your organic rankings and drive consistent, qualified traffic from Google and other search engines.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📲</div>
+        <div class="wd-feat-title">Social Media Marketing</div>
+        <div class="wd-feat-desc">Build brand awareness and engagement across Facebook, Instagram, LinkedIn, and more with targeted campaigns.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">💰</div>
+        <div class="wd-feat-title">Pay-Per-Click Campaigns</div>
+        <div class="wd-feat-desc">High-converting Google Ads and paid social campaigns managed for maximum return on every rupee spent.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">✍️</div>
+        <div class="wd-feat-title">Content Marketing</div>
+        <div class="wd-feat-desc">Compelling blogs, videos, and creatives that attract, educate, and convert your target audience.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📧</div>
+        <div class="wd-feat-title">Email Marketing</div>
+        <div class="wd-feat-desc">Automated email sequences and newsletters that nurture leads and drive repeat business effectively.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📊</div>
+        <div class="wd-feat-title">Analytics & Reporting</div>
+        <div class="wd-feat-desc">Transparent dashboards and monthly reports so you always know exactly what's working and why.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Why Our Approach Works</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#f59e0b">📈</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Data-Driven Strategies</div>
+          <div class="wd-step-desc">Every campaign is backed by thorough research and analytics — no guesswork, only decisions that maximise ROI.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#f59e0b">🎯</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Engaging Content</div>
+          <div class="wd-step-desc">We create impactful content that genuinely resonates with your target audience and moves them to act.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#f59e0b">💡</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Cost-Effective Solutions</div>
+          <div class="wd-step-desc">High-quality results delivered within your budget — we optimise spend continuously to get more from every campaign.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our Campaign Process</h3>
+    <div class="wd-process">
+      <div class="wd-step"><div class="wd-step-num">1</div><div class="wd-step-body"><div class="wd-step-name">Audit & Research</div><div class="wd-step-desc">We analyse your current digital presence, competitors, and audience to identify the best growth opportunities.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">2</div><div class="wd-step-body"><div class="wd-step-name">Strategy & Planning</div><div class="wd-step-desc">A customised multi-channel marketing roadmap aligned with your business goals and timeline.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">3</div><div class="wd-step-body"><div class="wd-step-name">Execution & Optimisation</div><div class="wd-step-desc">Campaigns go live with continuous A/B testing and optimisation to improve performance week over week.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">4</div><div class="wd-step-body"><div class="wd-step-name">Report & Scale</div><div class="wd-step-desc">Monthly reporting with clear metrics — we double down on what works and scale campaigns for greater impact.</div></div></div>
+    </div>
+
+    <h3 class="wd-section-title">Tools & Platforms</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">🔵 Google Ads</span>
+      <span class="wd-tech-pill">📘 Meta Ads</span>
+      <span class="wd-tech-pill">📊 Google Analytics</span>
+      <span class="wd-tech-pill">🔍 Google Search Console</span>
+      <span class="wd-tech-pill">📌 SEMrush</span>
+      <span class="wd-tech-pill">🔗 Ahrefs</span>
+      <span class="wd-tech-pill">📧 Mailchimp</span>
+      <span class="wd-tech-pill">📱 Hootsuite</span>
+      <span class="wd-tech-pill">🎨 Canva</span>
+      <span class="wd-tech-pill">📈 HubSpot</span>
+    </div>
+
+    <h3 class="wd-section-title">Results We Deliver</h3>
+    <div class="wd-features wd-features-2">
+      <div class="wd-feat"><div class="wd-feat-icon">🚀</div><div class="wd-feat-title">3× Average ROI</div><div class="wd-feat-desc">Our clients see an average 3x return on their digital marketing investment within 6 months.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📣</div><div class="wd-feat-title">+200% Social Reach</div><div class="wd-feat-desc">Targeted social campaigns that double and triple organic and paid reach for growing brands.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🖱️</div><div class="wd-feat-title">Lower Cost-Per-Click</div><div class="wd-feat-desc">Continuous bid optimisation brings down CPC while maintaining or improving conversion rates.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📋</div><div class="wd-feat-title">Full Transparency</div><div class="wd-feat-desc">Real-time dashboards and monthly strategy reviews keep you in control of your marketing budget.</div></div>
+    </div>
+
+    <div class="wd-cta" style="background:linear-gradient(135deg,#1a1200,#2d1f00)">
+      <h3>Ready to Grow Your Business Online?</h3>
+      <p>Get a free consultation and discover the right digital strategy for your brand.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Get a Consultation →</a>
+    </div>
+  </div>
+</div>
+
+<!-- SEO OPTIMISATION MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'seo'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/pictures/seo1.jpg" alt="SEO Services">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 05</div>
+      <h2 class="wd-modal-hero-title">SEO Optimisation</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">Dominate search results with our professional SEO services. At Menbo Technologies, our approach ensures long-term visibility and higher rankings on Google — driving consistent organic traffic, qualified leads, and sustainable business growth without relying on paid ads.</p>
+
+    <h3 class="wd-section-title">Our SEO Specialisations</h3>
+    <div class="wd-features">
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔑</div>
+        <div class="wd-feat-title">Keyword Research & Strategy</div>
+        <div class="wd-feat-desc">We identify the most relevant, high-intent keywords that bring qualified leads directly to your business.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📝</div>
+        <div class="wd-feat-title">On-Page Optimisation</div>
+        <div class="wd-feat-desc">Meta tags, headers, content structure, internal linking — every page element tuned for search engines and users.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">⚙️</div>
+        <div class="wd-feat-title">Technical SEO Audits</div>
+        <div class="wd-feat-desc">Full site crawls to fix indexing issues, improve site speed, Core Web Vitals, and search engine crawlability.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔗</div>
+        <div class="wd-feat-title">Link Building</div>
+        <div class="wd-feat-desc">Ethical, white-hat link-building strategies that improve domain authority and trustworthiness over time.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📍</div>
+        <div class="wd-feat-title">Local SEO</div>
+        <div class="wd-feat-desc">Google Business Profile optimisation and local citations to dominate "near me" searches in your area.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📊</div>
+        <div class="wd-feat-title">SEO Reporting</div>
+        <div class="wd-feat-desc">Monthly rank tracking, traffic reports, and actionable insights so you always know your SEO progress.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Key Benefits</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#10b981">👁️</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Increased Visibility</div>
+          <div class="wd-step-desc">Our strategies help your website appear higher in search results, attracting more organic traffic consistently.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#10b981">🎯</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Advanced Keyword Targeting</div>
+          <div class="wd-step-desc">We target the most profitable keywords to bring qualified leads who are ready to convert.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#10b981">📈</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Sustainable Growth</div>
+          <div class="wd-step-desc">Long-term SEO strategies that build compounding results — traffic and rankings that grow month over month.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:#10b981">🔒</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Quality Link Building</div>
+          <div class="wd-step-desc">Ethical backlink acquisition that builds domain authority without risking Google penalties.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our SEO Process</h3>
+    <div class="wd-process">
+      <div class="wd-step"><div class="wd-step-num">1</div><div class="wd-step-body"><div class="wd-step-name">Free SEO Audit</div><div class="wd-step-desc">A comprehensive analysis of your current rankings, technical health, backlink profile, and competitor landscape.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">2</div><div class="wd-step-body"><div class="wd-step-name">Strategy Development</div><div class="wd-step-desc">A custom SEO roadmap with keyword targets, content plan, and technical fixes prioritised by impact.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">3</div><div class="wd-step-body"><div class="wd-step-name">On-Page & Technical Fixes</div><div class="wd-step-desc">Implementation of all on-page changes, schema markup, speed improvements, and crawlability enhancements.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">4</div><div class="wd-step-body"><div class="wd-step-name">Content & Link Building</div><div class="wd-step-desc">Publishing optimised content and building authoritative backlinks to push your rankings higher month by month.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">5</div><div class="wd-step-body"><div class="wd-step-name">Monitor & Refine</div><div class="wd-step-desc">Ongoing tracking, algorithm update responses, and strategy refinement to maintain and grow your rankings.</div></div></div>
+    </div>
+
+    <h3 class="wd-section-title">Tools We Use</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">🔍 Google Search Console</span>
+      <span class="wd-tech-pill">📊 Google Analytics 4</span>
+      <span class="wd-tech-pill">📌 SEMrush</span>
+      <span class="wd-tech-pill">🔗 Ahrefs</span>
+      <span class="wd-tech-pill">🕷️ Screaming Frog</span>
+      <span class="wd-tech-pill">📍 Google My Business</span>
+      <span class="wd-tech-pill">⚡ PageSpeed Insights</span>
+      <span class="wd-tech-pill">🧩 Moz Pro</span>
+    </div>
+
+    <h3 class="wd-section-title">Results We Achieve</h3>
+    <div class="wd-features wd-features-2">
+      <div class="wd-feat"><div class="wd-feat-icon">🥇</div><div class="wd-feat-title">Page 1 Rankings</div><div class="wd-feat-desc">Consistent first-page results for target keywords, driving a steady stream of organic visitors.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📉</div><div class="wd-feat-title">Lower Bounce Rate</div><div class="wd-feat-desc">On-page optimisation and content improvements that keep visitors engaged longer on your site.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🌱</div><div class="wd-feat-title">Compounding Traffic</div><div class="wd-feat-desc">Unlike paid ads, SEO builds momentum — traffic continues to grow even after initial optimisation work.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">💼</div><div class="wd-feat-title">More Qualified Leads</div><div class="wd-feat-desc">Intent-based keyword targeting brings visitors who are actively searching for your products or services.</div></div>
+    </div>
+
+    <div class="wd-cta" style="background:linear-gradient(135deg,#001a0d,#003320)">
+      <h3>Ready to Rank Higher on Google?</h3>
+      <p>Get a free SEO audit and discover the quick wins hiding in your website right now.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Get a Free SEO Audit →</a>
+    </div>
+  </div>
+</div>
+
+<!-- IT CONSULTING MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'it'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/pictures/consult1.jpg" alt="IT Consulting">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">✦ Service 06</div>
+      <h2 class="wd-modal-hero-title">IT Consulting</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">At Menbo Technologies, our IT Consulting services are designed to help your business navigate the ever-evolving technological landscape. We provide expert advice and tailored solutions to ensure your operations are efficient, secure, and scalable — so technology becomes your competitive advantage, not a bottleneck.</p>
+
+    <h3 class="wd-section-title">Our Specialisations</h3>
+    <div class="wd-features">
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🔄</div>
+        <div class="wd-feat-title">Digital Transformation</div>
+        <div class="wd-feat-desc">Modernise your business processes and legacy systems with the right digital tools and methodologies.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🗺️</div>
+        <div class="wd-feat-title">IT Strategy Planning</div>
+        <div class="wd-feat-desc">Long-term technology roadmaps that align IT investments with your overall business objectives.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">🛡️</div>
+        <div class="wd-feat-title">Cybersecurity Solutions</div>
+        <div class="wd-feat-desc">Risk assessments, vulnerability audits, and security frameworks to protect your business data and systems.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">☁️</div>
+        <div class="wd-feat-title">Cloud Computing Services</div>
+        <div class="wd-feat-desc">Scalable cloud migration, architecture design, and managed cloud services to modernise your infrastructure.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">📊</div>
+        <div class="wd-feat-title">Data Analytics & BI</div>
+        <div class="wd-feat-desc">Turn raw data into actionable insights with dashboards and reports that drive informed decision-making.</div>
+      </div>
+      <div class="wd-feat">
+        <div class="wd-feat-icon">💻</div>
+        <div class="wd-feat-title">Software Recommendations</div>
+        <div class="wd-feat-desc">Impartial advice on the best tools, platforms, and software stack tailored to your team and budget.</div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our Value Proposition</h3>
+    <div class="wd-process">
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">🏗️</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Expert IT Guidance</div>
+          <div class="wd-step-desc">Optimise your infrastructure, enhance security posture, and align technology with long-term business growth.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">⚡</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Innovative Solutions</div>
+          <div class="wd-step-desc">We leverage the latest technologies to provide cutting-edge solutions tailored specifically to your needs.</div>
+        </div>
+      </div>
+      <div class="wd-step">
+        <div class="wd-step-num" style="background:var(--acc2)">🔐</div>
+        <div class="wd-step-body">
+          <div class="wd-step-name">Security Focused</div>
+          <div class="wd-step-desc">Every recommendation and implementation keeps your business data secure against evolving threats.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="wd-section-title">Our Consulting Process</h3>
+    <div class="wd-process">
+      <div class="wd-step"><div class="wd-step-num">1</div><div class="wd-step-body"><div class="wd-step-name">Discovery & Assessment</div><div class="wd-step-desc">We deep-dive into your current IT environment, identifying gaps, risks, and untapped opportunities.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">2</div><div class="wd-step-body"><div class="wd-step-name">Strategy & Roadmap</div><div class="wd-step-desc">A clear, prioritised IT strategy aligned with your business goals, budget, and timeline.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">3</div><div class="wd-step-body"><div class="wd-step-name">Implementation Support</div><div class="wd-step-desc">Hands-on guidance during rollout — from cloud migrations to new software deployments and team training.</div></div></div>
+      <div class="wd-step"><div class="wd-step-num">4</div><div class="wd-step-body"><div class="wd-step-name">Review & Optimise</div><div class="wd-step-desc">Ongoing monitoring, performance reviews, and strategy adjustments to keep your IT infrastructure performing optimally.</div></div></div>
+    </div>
+
+    <h3 class="wd-section-title">Solutions We Deliver</h3>
+    <div class="wd-features">
+      <div class="wd-feat"><div class="wd-feat-icon">🌐</div><div class="wd-feat-title">Web Development</div><div class="wd-feat-desc">Custom websites and applications built with modern frameworks to meet your business goals effectively.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📣</div><div class="wd-feat-title">Digital Marketing</div><div class="wd-feat-desc">Strategic campaigns across SEO, social media, email, and paid ads to grow your online presence.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">☁️</div><div class="wd-feat-title">Cloud Services</div><div class="wd-feat-desc">Scalable cloud solutions to modernise your IT, reduce costs, and improve performance and accessibility.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">📈</div><div class="wd-feat-title">Data Analytics</div><div class="wd-feat-desc">Dashboards and BI reports that transform raw data into informed, confident business decisions.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🔒</div><div class="wd-feat-title">Security Frameworks</div><div class="wd-feat-desc">End-to-end security strategies that protect your data, users, and systems from modern cyber threats.</div></div>
+      <div class="wd-feat"><div class="wd-feat-icon">🤝</div><div class="wd-feat-title">Ongoing Partnership</div><div class="wd-feat-desc">We act as your long-term technology partner — available when you need strategic guidance or hands-on support.</div></div>
+    </div>
+
+    <h3 class="wd-section-title">Technologies & Platforms</h3>
+    <div class="wd-techs">
+      <span class="wd-tech-pill">☁️ AWS</span>
+      <span class="wd-tech-pill">🔵 Microsoft Azure</span>
+      <span class="wd-tech-pill">🟡 Google Cloud</span>
+      <span class="wd-tech-pill">🐳 Docker</span>
+      <span class="wd-tech-pill">⎈ Kubernetes</span>
+      <span class="wd-tech-pill">🛡️ Cloudflare</span>
+      <span class="wd-tech-pill">📊 Power BI</span>
+      <span class="wd-tech-pill">🔥 Firebase</span>
+      <span class="wd-tech-pill">🗄️ SQL / NoSQL</span>
+      <span class="wd-tech-pill">🔐 SSL / IAM</span>
+    </div>
+
+    <div class="wd-cta" style="background:linear-gradient(135deg,#080f1a,#0d1f35)">
+      <h3>Let's Elevate Your IT Strategy</h3>
+      <p>Book a free consultation and let our experts map out the best technology path for your business.</p>
+      <a href="#contact" class="wd-cta-btn" (click)="scrollToContact()">Get a Consultation →</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'privacy'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/service/policy_1.jpg" alt="Privacy Policy">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">📋 Important Policy</div>
+      <h2 class="wd-modal-hero-title">Privacy Policy</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">{{ privacyIntro }}</p>
+    
+    <div *ngFor="let section of privacySections">
+      <h3 class="wd-section-title">{{ section.title }}</h3>
+      <div class="wd-policy-items">
+        <div class="wd-policy-item" *ngFor="let item of section.items">
+          <div class="wd-policy-marker">•</div>
+          <div class="wd-policy-text">{{ item }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background: #f8f8f8; border-radius: 8px;">
+      <h3 class="wd-section-title" style="margin-top: 0;">Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <p style="margin: 10px 0; font-weight: 500;">Email: <a href="mailto:support@menbotechnologies.in">support@menbotechnologies.in</a></p>
+      <p style="margin: 10px 0; font-weight: 500;">Phone: <a href="tel:+919841813134">+91 98418 13134</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS & CONDITIONS MODAL -->
+<div class="wd-modal" [ngClass]="{'open': activeModal === 'terms'}" role="dialog" aria-modal="true">
+  <div class="wd-modal-hero">
+    <img src="https://www.menbotechnologies.in/assets/service/terms.jpg" alt="Terms of Service">
+    <div class="wd-modal-hero-overlay"></div>
+    <div class="wd-modal-hero-content">
+      <div class="wd-modal-eyebrow">📋 Important Policy</div>
+      <h2 class="wd-modal-hero-title">Terms of Service</h2>
+    </div>
+    <button class="wd-close" (click)="closeModal()" aria-label="Close">✕</button>
+  </div>
+  <div class="wd-modal-body">
+    <p class="wd-intro">{{ termsIntro }}</p>
+    
+    <div *ngFor="let section of termsSections">
+      <h3 class="wd-section-title">{{ section.title }}</h3>
+      <div class="wd-policy-items">
+        <div class="wd-policy-item" *ngFor="let item of section.items">
+          <div class="wd-policy-marker">•</div>
+          <div class="wd-policy-text">{{ item }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background: #f8f8f8; border-radius: 8px;">
+      <h3 class="wd-section-title" style="margin-top: 0;">Contact Us</h3>
+      <p>If you have any questions about these terms, please contact us:</p>
+      <p style="margin: 10px 0; font-weight: 500;">Email: <a href="mailto:support@menbotechnologies.in">support@menbotechnologies.in</a></p>
+      <p style="margin: 10px 0; font-weight: 500;">Phone: <a href="tel:+919841813134">+91 98418 13134</a></p>
+    </div>
+  </div>
+</div>

@@ -1,35 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap');
 
-@import '../node_modules/ngx-toastr/toastr.css';
-
-@media (min-width: 1400px) {
-
-    /* .container-menu,
-    .container-menu-lg,
-    .container-menu-md,
-    .container-menu-sm,
-    .container-menu-xl,
-    .container-menu-xxl {
-        max-width: 1300px !important;
-    } */
+:root {
+  --bg: #f5f3ee;
+  --bg2: #ede9e1;
+  --ink: #0f0e0b;
+  --ink2: #3a3830;
+  --muted: #7a7568;
+  --accent: #e8420a;
+  --acc2: #1a3a5c;
+  --acc3: #f5a623;
+  --white: #fdfcf9;
+  --border: rgba(15, 14, 11, 0.1);
+  --shadow: 0 2px 24px rgba(15, 14, 11, 0.08);
 }
 
-.container-menu {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 1400px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1315px !important;
-    }
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Clash Display', sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* List reset */
+ul,
+ol {
+  list-style: none;
+}
+

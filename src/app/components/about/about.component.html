@@ -1,0 +1,24 @@
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <img src="https://www.menbotechnologies.in/assets/about.jpeg" alt="Menbo Technologies" onerror="this.style.display='none'">
+        </div>
+        <div class="about-badge"><div class="about-badge-num">6+</div><div class="about-badge-label">Years of<br>Excellence</div></div>
+      </div>
+      <div class="reveal rd1">
+        <div class="label">Who We Are</div>
+        <h2 class="section-title">Built to Deliver.<br>Driven by Results.</h2>
+        <p class="about-text">Menbo Technologies is a leading provider of software development services, dedicated to delivering innovative and tailored solutions. Our experienced team is committed to helping you achieve your business goals through technology.<br><br>With a focus on quality and customer satisfaction, we employ the latest technologies and methodologies to deliver high-impact solutions that drive success.</p>
+        <div class="why-grid">
+          <div class="why-item" *ngFor="let item of whyItems">
+            <div class="why-icon">{{ item.icon }}</div>
+            <div class="why-title">{{ item.title }}</div>
+            <div class="why-desc">{{ item.description }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

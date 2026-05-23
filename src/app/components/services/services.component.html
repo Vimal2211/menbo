@@ -1,0 +1,24 @@
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <div>
+        <div class="label">What We Do</div>
+        <h2 class="section-title">Our Services</h2>
+      </div>
+      <p class="section-sub" style="margin: 0">End-to-end digital services crafted to elevate your brand and accelerate your business.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" *ngFor="let service of services; let i = index" 
+           [ngClass]="'rd' + (i > 0 ? i : '')"
+           (click)="openServiceModal(service.id)">
+        <div class="svc-top">
+          <div class="svc-icon">{{ service.icon }}</div>
+          <span class="svc-num">{{ service.num }}</span>
+        </div>
+        <h3 class="svc-title">{{ service.title }}</h3>
+        <p class="svc-desc">{{ service.description }}</p>
+        <div class="svc-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>

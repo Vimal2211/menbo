@@ -1,0 +1,17 @@
+<section id="process">
+  <div class="section-inner">
+    <div class="label">How We Work</div>
+    <h2 class="section-title">Our Process</h2>
+    <p class="section-sub">A transparent, collaborative approach from first call to final launch.</p>
+    <div class="process-list reveal">
+      <div class="process-item" *ngFor="let proc of processes">
+        <div class="process-num">{{ proc.num }}</div>
+        <div>
+          <h3 class="process-title">{{ proc.title }}</h3>
+          <p class="process-desc">{{ proc.description }}</p>
+        </div>
+        <div class="process-icon">{{ proc.icon }}</div>
+      </div>
+    </div>
+  </div>
+</section>
