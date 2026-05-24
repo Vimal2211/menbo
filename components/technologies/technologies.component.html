@@ -1,0 +1,25 @@
+<section id="technologies">
+  <div class="section-inner">
+    <div class="label">Our Stack</div>
+    <h2 class="section-title">Technologies We Use</h2>
+    <p class="section-sub">Battle-tested, modern tools powering every product we build.</p>
+    <div class="tech-marquee-outer">
+      <div class="tech-row">
+        <div class="tech-pill" *ngFor="let tech of tech1">
+          <span>{{ tech.emoji }}</span>{{ tech.name }}
+        </div>
+        <div class="tech-pill" *ngFor="let tech of tech1">
+          <span>{{ tech.emoji }}</span>{{ tech.name }}
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-pill" *ngFor="let tech of tech2">
+          <span>{{ tech.emoji }}</span>{{ tech.name }}
+        </div>
+        <div class="tech-pill" *ngFor="let tech of tech2">
+          <span>{{ tech.emoji }}</span>{{ tech.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

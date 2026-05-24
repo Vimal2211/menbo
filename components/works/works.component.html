@@ -1,0 +1,59 @@
+<section id="works">
+  <div class="section-inner">
+    <div class="works-header reveal">
+      <div>
+        <div class="label">Selected Work</div>
+        <h2 class="section-title">Our Works</h2>
+      </div>
+      <p class="section-sub">A closer look at the digital experiences we’ve built for brands that want better visibility, stronger conversions, and polished execution.</p>
+    </div>
+
+    <div class="works-grid">
+      <article class="work-card reveal" *ngFor="let work of displayedWorks" (click)="openWork(work.id)">
+        <div class="work-visual">
+          <img *ngIf="work.image; else workFallback" [src]="work.image" [alt]="work.title" />
+          <ng-template #workFallback>
+            <!-- <div class="work-fallback"></div> -->
+          </ng-template>
+          <div class="work-visual-overlay"></div>
+          <div class="work-visual-badge">{{ work.category }}</div>
+          <div class="work-visual-caption">{{ work.result }}</div>
+        </div>
+
+        <div class="work-body">
+          <div class="svc-top">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 8h16" />
+                <path d="M7 12h10" />
+                <path d="M9 16h6" />
+                <rect x="4" y="4" width="16" height="16" rx="3" />
+              </svg>
+            </div>
+            <span class="work-meta">{{ work.tags[0] }}</span>
+          </div>
+
+          <h3 class="work-title">{{ work.title }}</h3>
+          <p class="work-desc">{{ work.description }}</p>
+
+          <div class="work-tags">
+            <span *ngFor="let tag of work.tags">{{ tag }}</span>
+          </div>
+
+          <div class="work-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M5 12h14" />
+              <path d="m15 7 5 5-5 5" />
+            </svg>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="works-footer">
+      <button class="explore-btn" type="button" (click)="toggleExploreMore()">
+        {{ showAllWorks ? 'Show Less' : 'Explore More' }}
+      </button>
+    </div>
+  </div>
+</section>

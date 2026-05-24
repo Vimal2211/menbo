@@ -1,0 +1,59 @@
+<section id="team">
+  <div class="section-inner">
+    <div class="team-header">
+      <div>
+        <div class="label">Our People</div>
+        <h2 class="section-title">Meet the Team</h2>
+      </div>
+      <p class="section-sub" style="margin: 0">7 passionate experts behind every pixel,<br>every line of code, every campaign.</p>
+    </div>
+
+    <!-- Featured Team Member -->
+    <div class="team-featured reveal" *ngIf="leadMember">
+      <div class="tf-img">
+        <img [src]="leadMember.image" [alt]="leadMember.name" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="tf-fallback">{{ leadMember.fallbackText }}</div>
+      </div>
+      <div class="tf-body">
+        <div class="tf-bg-num">01</div>
+        <div class="tf-role-tag">{{ leadMember.icon }} {{ leadMember.role }}</div>
+        <div class="tf-name">{{ leadMember.name }}</div>
+        <p class="tf-desc">{{ leadMember.description }}</p>
+        <div class="tf-skills">
+          <span class="tf-skill" *ngFor="let skill of leadMember.skills">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Flip Cards -->
+    <div class="team-grid">
+      <div class="team-card" *ngFor="let member of otherMembers" [ngClass]="member.colorTheme">
+        <div class="team-card-inner">
+          <!-- Front -->
+          <div class="team-front">
+            <div class="tf-front-img">
+              <img [src]="member.image" [alt]="member.name" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="tf-front-fallback" [style.color]="getColorForTheme(member.colorTheme)">{{ member.fallbackText }}</div>
+            </div>
+            <div class="team-front-body">
+              <div class="team-front-num" [style.backgroundColor]="getBackgroundColorForTheme(member.colorTheme)">{{ member.id }}</div>
+              <div class="team-front-name">{{ member.name }}</div>
+              <div class="team-front-role">{{ member.role }}</div>
+              <div class="team-flip-hint">↻ hover to flip</div>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="team-back">
+            <div class="team-back-icon">{{ member.icon }}</div>
+            <div class="team-back-name">{{ member.name }}</div>
+            <div class="team-back-role">{{ member.role }}</div>
+            <p class="team-back-desc">{{ member.description }}</p>
+            <div class="team-back-skills">
+              <span class="team-back-skill" *ngFor="let skill of member.skills">{{ skill }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

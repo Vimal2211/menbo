@@ -1,0 +1,12 @@
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item" *ngFor="let item of items">
+      <strong *ngIf="item.bold">{{ item.text }}</strong>
+      <span *ngIf="!item.bold">{{ item.text }}</span>
+    </span>
+    <span class="ticker-item" *ngFor="let item of items">
+      <strong *ngIf="item.bold">{{ item.text }}</strong>
+      <span *ngIf="!item.bold">{{ item.text }}</span>
+    </span>
+  </div>
+</div>
