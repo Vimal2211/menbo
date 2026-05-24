@@ -1,0 +1,56 @@
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <!-- <img src="https://www.menbotechnologies.in/assets/about.jpeg" alt="Menbo Technologies" onerror="this.style.display='none'"> -->
+          <img src="assets/images/Menbo/profile_Images/aboutus2.png" alt="Menbo Technologies" onerror="this.style.display='none'">
+        </div>
+        <div class="about-badge"><div class="about-badge-num">3+</div><div class="about-badge-label">Years of<br>Excellence</div></div>
+      </div>
+      <div class="reveal rd1">
+        <div class="label">Who We Are</div>
+        <h2 class="section-title">Built to Deliver.<br>Driven by Results.</h2>
+        <p class="about-text">Menbo Technologies is a leading provider of software development services, dedicated to delivering innovative and tailored solutions. Our experienced team is committed to helping you achieve your business goals through technology.<br><br>With a focus on quality and customer satisfaction, we employ the latest technologies and methodologies to deliver high-impact solutions that drive success.</p>
+        <div class="why-grid">
+          <div class="why-item" *ngFor="let item of whyItems">
+            <div class="why-icon">
+              <ng-container [ngSwitch]="item.icon">
+                <svg *ngSwitchCase="'expertise'" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 15c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Z"/>
+                  <path d="M16 12h6M2 12h6M12 2v6M12 16v6"/>
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <svg *ngSwitchCase="'innovation'" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2 8.76 8H2l5 4-1.76 6 7-5.3 7 5.3-1.76-6 5-4h-6.76L12 2Z"/>
+                </svg>
+                <svg *ngSwitchCase="'customer'" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <svg *ngSwitchCase="'delivery'" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+                <svg *ngSwitchCase="'quality'" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2L2 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5Z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+                <svg *ngSwitchCase="'scalable'" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6-6 6 6"/>
+                  <path d="M6 12l6-6 6 6"/>
+                  <path d="M6 15l6-6 6 6"/>
+                  <path d="M3 10v10h18V10"/>
+                </svg>
+              </ng-container>
+            </div>
+            <div class="why-title">{{ item.title }}</div>
+            <div class="why-desc">{{ item.description }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
