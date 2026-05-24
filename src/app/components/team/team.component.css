@@ -488,6 +488,27 @@
   color: #5b9bd5;
 }
 
+.tc-cyan .team-front {
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+.tc-cyan .team-front-num {
+  background: #22d3ee;
+}
+
+.tc-cyan .team-front-role {
+  color: #22d3ee;
+}
+
+.tc-cyan .team-back {
+  background: linear-gradient(145deg, #082f39, #0a4a57);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+}
+
+.tc-cyan .team-back-role {
+  color: #22d3ee;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);

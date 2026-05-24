@@ -24,7 +24,8 @@ export class TeamComponent implements OnInit {
       'tc-gold': '#f5a623',
       'tc-purple': '#8b5cf6',
       'tc-green': '#10b981',
-      'tc-blue': '#5b9bd5'
+      'tc-blue': '#5b9bd5',
+      'tc-cyan': '#00bcd4',
     };
     return colors[theme] || '#e8420a';
   }

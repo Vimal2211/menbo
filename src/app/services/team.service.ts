@@ -90,6 +90,18 @@ export class TeamService {
       image: 'assets/images/Menbo/profile_Images/Surendar.png',
       colorTheme: 'tc-blue',
       fallbackText: 'S'
+    },
+     {
+      id: 7,
+      name: 'Oviya',
+      role: 'Manual & Automation Tester',
+      icon: '🧪',
+      description: 'Ensures software quality with meticulous manual testing and robust automation frameworks.',
+      skills: ['Manual', 'Automation', 'Selenium', 'TestNG'],
+      // image: 'https://www.menbotechnologies.in/assets/profile/Designer_5.jpg',
+      image: 'assets/images/Menbo/profile_Images/Oviya.png',
+      colorTheme: 'tc-cyan',
+      fallbackText: 'O'
     }
   ];
 
