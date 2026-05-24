@@ -9,7 +9,7 @@ export class HeroComponent implements OnInit {
   stats = [
     { num: '25+', label: 'Projects Done', id: 'gc1' },
     { num: '98%', label: 'Satisfaction', id: 'gc2' },
-    { num: '10+', label: 'Team', id: 'gc3' },
+    { num: '7+', label: 'Team', id: 'gc3' },
     { num: '24h', label: 'Response Time', id: 'gc4' }
   ];
 

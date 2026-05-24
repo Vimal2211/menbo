@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+  startYear = 2019;
+  currentYear = new Date().getFullYear();
+
+  experienceYears = this.currentYear - this.startYear;
   whyItems = [
     { icon: 'expertise', title: 'Proven Expertise', description: 'Industry experts with years of experience in software development.' },
     { icon: 'innovation', title: 'Innovative Solutions', description: 'Latest technologies to keep you ahead of the competition.' },

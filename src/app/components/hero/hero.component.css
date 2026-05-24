@@ -183,7 +183,7 @@
   border-radius: 16px;
   padding: 0.7rem 1.2rem 1rem;
   box-shadow: var(--shadow);
-  animation: float 6s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   width: 140px;
 }
 
@@ -200,7 +200,7 @@
 }
 
 .gc3 {
-  top: 40%;
+  top: 38%;
   right: -5%;
   animation-delay: 0.9s;
 }
@@ -252,13 +252,13 @@
 
 .geo-center-logo {
   font-family: 'Clash Display', sans-serif;
-  font-size: 2rem;
+  font-size: 56px;
   font-weight: 700;
   color: var(--accent);
 }
 
 .geo-center-sub {
-  font-size: 0.7rem;
+  font-size: 30px;
   color: var(--muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
